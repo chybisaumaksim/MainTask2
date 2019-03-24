@@ -1,7 +1,5 @@
 package by.epam.javatraining.chybisau.tasks.maintask01.model.logic.checkifsymmetrical;
 
-import by.epam.javatraining.chybisau.tasks.maintask01.model.data.Matrix;
-
 /**
  * Created by Maksim Chybisau on 09/03/19.
  * Changed by Maksim Chybisau on 23/03/19.
@@ -10,14 +8,14 @@ import by.epam.javatraining.chybisau.tasks.maintask01.model.data.Matrix;
  */
 class MatrixSymmetricalChecker {
 
-    static boolean isSymmetrical(Matrix matrix) {
+    static boolean isSymmetrical(by.epam.javatraining.chybisau.tasks.maintask01.model.data.Aircraft aircraft) {
         boolean isSymmetrical = true;
-        if (matrix.length() != matrix.width()) {
+        if (aircraft.length() != aircraft.width()) {
             isSymmetrical = false;
         } else {
-            for (int i = 0; i < matrix.length(); i++) {
-                for (int j = 0; j < matrix.width(); j++) {
-                    if (matrix.getElement(i, j) != matrix.getElement(j, i)) {
+            for (int i = 0; i < aircraft.length(); i++) {
+                for (int j = 0; j < aircraft.width(); j++) {
+                    if (aircraft.getElement(i, j) != aircraft.getElement(j, i)) {
                         isSymmetrical = false;
                         break;
                     }

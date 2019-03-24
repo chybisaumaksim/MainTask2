@@ -1,7 +1,5 @@
 package by.epam.javatraining.chybisau.tasks.maintask01.model.logic.transpose;
 
-import by.epam.javatraining.chybisau.tasks.maintask01.model.data.Matrix;
-
 /**
  * Created by Maksim Chybisau on 09/03/19.
  * Changed by Maksim Chybisau on 23/03/19.
@@ -11,17 +9,17 @@ import by.epam.javatraining.chybisau.tasks.maintask01.model.data.Matrix;
 
 class MatrixTransposition {
 
-    static Matrix transposeMatrix(Matrix matrix) throws Exception {
-        for (int i = 0; i < matrix.length(); i++) {
-            for (int j = i + 1; j < matrix.width(); j++) {
-                if (matrix.length() != matrix.width()) {
-                    throw new Exception("Matrix is not square");
+    static by.epam.javatraining.chybisau.tasks.maintask01.model.data.Aircraft transposeMatrix(by.epam.javatraining.chybisau.tasks.maintask01.model.data.Aircraft aircraft) throws Exception {
+        for (int i = 0; i < aircraft.length(); i++) {
+            for (int j = i + 1; j < aircraft.width(); j++) {
+                if (aircraft.length() != aircraft.width()) {
+                    throw new Exception("Aircraft is not square");
                 }
-                double temp = matrix.getElement(i, j);
-                matrix.setElement(i, j, matrix.getElement(j, i));
-                matrix.setElement(j, i, temp);
+                double temp = aircraft.getElement(i, j);
+                aircraft.setElement(i, j, aircraft.getElement(j, i));
+                aircraft.setElement(j, i, temp);
             }
         }
-        return matrix;
+        return aircraft;
     }
 }
