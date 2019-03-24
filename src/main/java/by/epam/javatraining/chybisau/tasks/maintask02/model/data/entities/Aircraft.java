@@ -8,10 +8,10 @@ package by.epam.javatraining.chybisau.tasks.maintask02.model.data.entities;
  */
 
 
-public class Aircraft {
-
+public class Aircraft{
 
     public Aircraft() {
+
     }
 
     @Override

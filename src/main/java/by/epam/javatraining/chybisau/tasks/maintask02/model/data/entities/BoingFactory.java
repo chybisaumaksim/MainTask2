@@ -12,7 +12,6 @@ import java.util.Properties;
  * @version 0.0.1
  */
 public class BoingFactory {
-    private static Connection connection;
 
     public BoingFactory() throws PersistException {
         try {

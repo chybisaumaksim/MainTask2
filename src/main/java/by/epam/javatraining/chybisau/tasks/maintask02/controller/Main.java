@@ -1,4 +1,5 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.controller;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.entities.Boing737;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.ConsoleView;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.View;
 
