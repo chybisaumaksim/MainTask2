@@ -1,5 +1,9 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.entities;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.model.exceptions.PersistException;
+
+import java.io.IOException;
+
 /**
  * Created by Maksim Chybisau on 22/03/19.
  *
@@ -7,13 +11,12 @@ package by.epam.javatraining.chybisau.tasks.maintask02.model.data.entities;
  */
 public class Boeing737_500 extends Boing737{
 
-    double MaximumTakeOffWeight = 52300;
-    double FlightRange = 4444;
-    double CruisingSpeed = 912;
-    double MaximumFlightHeight = 11300;
-    double HourlyFuelConsumption =2400;
-    double SpecificFuelConsumption = 25.5;
-    double numberOfSeatsEconomy = 132;
-    double numberOfSeatsBusiness = 108;
+    private double MaximumTakeOffWeight;
+    private double CruisingSpeed;
+    private double HourlyFuelConsumption;
+    private double numberOfSeatsEconomy;
+    private double numberOfSeatsBusinessAndEconomy;
 
+    public Boeing737_500() throws IOException, PersistException {
+    }
 }

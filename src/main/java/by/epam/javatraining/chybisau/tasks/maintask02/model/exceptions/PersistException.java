@@ -1,4 +1,4 @@
-package by.epam.javatraining.chybisau.tasks.maintask02.model.data.entities;
+package by.epam.javatraining.chybisau.tasks.maintask02.model.exceptions;
 
 /**
  * Created by Maksim Chybisau on 22/03/19.
@@ -13,10 +13,6 @@ public class PersistException extends Exception {
 
     public PersistException(Throwable cause) {
         super(cause);
-    }
-
-    public PersistException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-        super(message, cause, enableSuppression, writableStackTrace);
     }
 
     public PersistException() {
