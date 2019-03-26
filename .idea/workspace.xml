@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a7e4a905-b40a-4018-860c-e1337eabc4ad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" afterDir="false" />
     </list>
@@ -102,26 +98,35 @@
       <file leaf-file-name="FlightRangeComparatorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="79">
+              <caret line="23" selection-start-line="23" selection-end-line="49" />
+              <folding>
+                <element signature="method#testCompareOne#0;class#FlightRangeComparatorTest#0" />
+                <element signature="method#testCompareTwo#0;class#FlightRangeComparatorTest#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PassangerCapacityComparatorTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PassangerCapacityComparatorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="374">
+              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+              <folding>
+                <element signature="docComment;class#PassangerCapacityComparatorTest#0" />
+                <element signature="method#testCompareOne#0;class#PassangerCapacityComparatorTest#0" />
+                <element signature="method#testCompareTwo#0;class#PassangerCapacityComparatorTest#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FuelConsumptionComparatorTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FuelConsumptionComparatorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
-              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="299">
+              <caret line="49" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="49" />
               <folding>
                 <element signature="docComment;class#FuelConsumptionComparatorTest#0" />
                 <element signature="method#testCompareTwo#0;class#FuelConsumptionComparatorTest#0" />
@@ -243,11 +248,11 @@
         <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/flighrangefinder/MaxMinFlightRangeFinderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/fuelconsumptiondinder/MaxMinFuelConsumptionFinderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" />
       </list>
     </option>
   </component>
@@ -455,84 +460,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="find" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="find" type="462c0819:PsiDirectoryNode" />
-              <item name="cruisingspeedfinder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-              <item name="cargocapacitycomparator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-              <item name="cruisingspeedcomparator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-              <item name="fuelconsumptioncomparator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-              <item name="maxspeadcomparator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
-              <item name="passangercapacitycomparator" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -605,7 +532,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FuelConsumptionComparatorTest.testCompareTwo">
+  <component name="RunManager" selected="TestNG.by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -648,19 +575,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CargoCapacityComparatorTest.testCompareOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightRangeComparatorTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Aircompany" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator.*" />
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator.CargoCapacityComparatorTest" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.FlightRangeComparatorTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="PassangerCapacityComparatorTest.testCompareOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Aircompany" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.passangercapacitycomparator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.passangercapacitycomparator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.passangercapacitycomparator.PassangerCapacityComparatorTest" />
       <option name="METHOD_NAME" value="testCompareOne" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -677,106 +633,19 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="CruisingSpeedComparatorTest.testCompareOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PassangerCapacityComparatorTest.testCompareTwo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Aircompany" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.*" />
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.passangercapacitycomparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparatorTest" />
-      <option name="METHOD_NAME" value="testCompareOne" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="CruisingSpeedComparatorTest.testCompareTwo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Aircompany" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparatorTest" />
-      <option name="METHOD_NAME" value="testCompareTwo" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="FuelConsumptionComparatorTest.testCompareOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Aircompany" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparatorTest" />
-      <option name="METHOD_NAME" value="testCompareOne" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="FuelConsumptionComparatorTest.testCompareTwo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Aircompany" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparatorTest" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.passangercapacitycomparator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.passangercapacitycomparator.PassangerCapacityComparatorTest" />
       <option name="METHOD_NAME" value="testCompareTwo" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
@@ -818,21 +687,79 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Aircompany" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Aircompany" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="TestNG.CargoCapacityComparatorTest.testCompareOne" />
-      <item itemvalue="TestNG.CruisingSpeedComparatorTest.testCompareOne" />
-      <item itemvalue="TestNG.CruisingSpeedComparatorTest.testCompareTwo" />
-      <item itemvalue="TestNG.FuelConsumptionComparatorTest.testCompareOne" />
-      <item itemvalue="TestNG.FuelConsumptionComparatorTest.testCompareTwo" />
+      <item itemvalue="TestNG.FlightRangeComparatorTest" />
+      <item itemvalue="TestNG.PassangerCapacityComparatorTest.testCompareOne" />
+      <item itemvalue="TestNG.PassangerCapacityComparatorTest.testCompareTwo" />
+      <item itemvalue="TestNG.by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find" />
+      <item itemvalue="TestNG.by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FuelConsumptionComparatorTest.testCompareTwo" />
-        <item itemvalue="TestNG.FuelConsumptionComparatorTest.testCompareOne" />
-        <item itemvalue="TestNG.CruisingSpeedComparatorTest.testCompareTwo" />
-        <item itemvalue="TestNG.CruisingSpeedComparatorTest.testCompareOne" />
-        <item itemvalue="TestNG.CargoCapacityComparatorTest.testCompareOne" />
+        <item itemvalue="TestNG.by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort" />
+        <item itemvalue="TestNG.by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find" />
+        <item itemvalue="TestNG.PassangerCapacityComparatorTest.testCompareTwo" />
+        <item itemvalue="TestNG.PassangerCapacityComparatorTest.testCompareOne" />
+        <item itemvalue="TestNG.FlightRangeComparatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -943,39 +870,46 @@
       <option name="project" value="LOCAL" />
       <updated>1553626487080</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="9 commit&#10;50perc tests of comparation">
+      <created>1553628180679</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1553628180679</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CruisingSpeedComparatorTest_testCompareOne - 2019.03.26 at 21h 16m 05s.xml">
-      <configuration name="CruisingSpeedComparatorTest.testCompareOne" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CruisingSpeedComparatorTest_testCompareOne - 2019.03.26 at 21h 16m 07s.xml">
-      <configuration name="CruisingSpeedComparatorTest.testCompareOne" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CruisingSpeedComparatorTest_testCompareOne - 2019.03.26 at 21h 17m 27s.xml">
-      <configuration name="CruisingSpeedComparatorTest.testCompareOne" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CruisingSpeedComparatorTest_testCompareTwo - 2019.03.26 at 21h 18m 33s.xml">
-      <configuration name="CruisingSpeedComparatorTest.testCompareTwo" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="CruisingSpeedComparatorTest_testCompareTwo - 2019.03.26 at 21h 18m 51s.xml">
-      <configuration name="CruisingSpeedComparatorTest.testCompareTwo" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FuelConsumptionComparatorTest_testCompareOne - 2019.03.26 at 21h 21m 01s.xml">
-      <configuration name="FuelConsumptionComparatorTest.testCompareOne" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FuelConsumptionComparatorTest_testCompareTwo - 2019.03.26 at 21h 21m 30s.xml">
-      <configuration name="FuelConsumptionComparatorTest.testCompareTwo" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FuelConsumptionComparatorTest_testCompareTwo - 2019.03.26 at 21h 21m 48s.xml">
-      <configuration name="FuelConsumptionComparatorTest.testCompareTwo" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="FuelConsumptionComparatorTest_testCompareTwo - 2019.03.26 at 21h 22m 08s.xml">
-      <configuration name="FuelConsumptionComparatorTest.testCompareTwo" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="FuelConsumptionComparatorTest_testCompareTwo - 2019.03.26 at 21h 22m 28s.xml">
       <configuration name="FuelConsumptionComparatorTest.testCompareTwo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="FlightRangeComparatorTest_testCompareOne - 2019.03.26 at 21h 24m 24s.xml">
+      <configuration name="FlightRangeComparatorTest.testCompareOne" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="FlightRangeComparatorTest_testCompareTwo - 2019.03.26 at 21h 24m 55s.xml">
+      <configuration name="FlightRangeComparatorTest.testCompareTwo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="FlightRangeComparatorTest - 2019.03.26 at 21h 25m 11s.xml">
+      <configuration name="FlightRangeComparatorTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PassangerCapacityComparatorTest_testCompareOne - 2019.03.26 at 21h 26m 28s.xml">
+      <configuration name="PassangerCapacityComparatorTest.testCompareOne" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PassangerCapacityComparatorTest_testCompareTwo - 2019.03.26 at 21h 27m 03s.xml">
+      <configuration name="PassangerCapacityComparatorTest.testCompareTwo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PassangerCapacityComparatorTest_testCompareTwo - 2019.03.26 at 21h 27m 16s.xml">
+      <configuration name="PassangerCapacityComparatorTest.testCompareTwo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PassangerCapacityComparatorTest_testCompareTwo - 2019.03.26 at 21h 27m 31s.xml">
+      <configuration name="PassangerCapacityComparatorTest.testCompareTwo" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="by_epam_javatraining_chybisau_tasks_maintask02_model_logic_find - 2019.03.26 at 21h 27m 47s.xml">
+      <configuration name="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="by_epam_javatraining_chybisau_tasks_maintask02_model_logic_sort - 2019.03.26 at 21h 27m 51s.xml">
+      <configuration name="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -1084,7 +1018,8 @@
     <MESSAGE value="8 commit&#10;tests" />
     <MESSAGE value="9 commit&#10;part of tests find" />
     <MESSAGE value="9 commit&#10;all find tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="9 commit&#10;all find tests" />
+    <MESSAGE value="9 commit&#10;50perc tests of comparation" />
+    <option name="LAST_COMMIT_MESSAGE" value="9 commit&#10;50perc tests of comparation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1496,20 +1431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1546,11 +1467,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="299">
+          <caret line="49" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="49" />
           <folding>
             <element signature="docComment;class#FuelConsumptionComparatorTest#0" />
             <element signature="method#testCompareTwo#0;class#FuelConsumptionComparatorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="23" selection-start-line="23" selection-end-line="49" />
+          <folding>
+            <element signature="method#testCompareOne#0;class#FlightRangeComparatorTest#0" />
+            <element signature="method#testCompareTwo#0;class#FlightRangeComparatorTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="docComment;class#PassangerCapacityComparatorTest#0" />
+            <element signature="method#testCompareOne#0;class#PassangerCapacityComparatorTest#0" />
+            <element signature="method#testCompareTwo#0;class#PassangerCapacityComparatorTest#0" />
           </folding>
         </state>
       </provider>
