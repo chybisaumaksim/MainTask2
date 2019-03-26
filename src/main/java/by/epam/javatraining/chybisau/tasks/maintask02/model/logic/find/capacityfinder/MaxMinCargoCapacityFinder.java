@@ -13,7 +13,7 @@ import java.util.List;
  *
  * @version 0.0.1
  */
-public class CargoCapacityFinder {
+public class MaxMinCargoCapacityFinder {
 
     public Plane getMaxCargoCapacityPlane(List<CargoPlane> cargoplanes) {
         return Collections.max(cargoplanes, new CargoCapacityComparator());

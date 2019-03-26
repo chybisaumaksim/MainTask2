@@ -5,10 +5,12 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.ca
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Airbus_A320neo;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_300;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_500;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.FlightRangeComparator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static org.testng.Assert.*;
@@ -33,6 +35,10 @@ public class CargoCapacityComparatorTest {
         List expected = new ArrayList();
         expected.add(an124);
         expected.add(an225);
-        assertEquals(expected, ccc.compare(an124, an225));
+        List actual = new ArrayList();
+        expected.add(an124);
+        expected.add(an225);
+        Collections.sort(expected, new CargoCapacityComparator());
+        assertEquals(expected, actual);
     }
 }
