@@ -12,7 +12,7 @@ import java.util.Comparator;
 public class FuelConsumptionComparator implements Comparator<Plane> {
     @Override
     public int compare(Plane o1, Plane o2) {
-        return (int) (o2.getFuelConsumption()-o1.getFuelConsumption());
+        return (int) (o1.getFuelConsumption()-o2.getFuelConsumption());
     }
 
 

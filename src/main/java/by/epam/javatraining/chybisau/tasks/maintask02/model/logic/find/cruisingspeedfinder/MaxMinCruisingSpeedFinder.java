@@ -1,6 +1,5 @@
-package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.maxmincruisingspeedfinder;
+package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.cruisingspeedfinder;
 
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.Fleet;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomporation.CruisingSpeedComparator;
 
@@ -16,5 +15,9 @@ public class MaxMinCruisingSpeedFinder {
 
     public Plane getMaxCruisingSpeedPlane(List<Plane> planes) {
         return Collections.max(planes, new CruisingSpeedComparator());
+    }
+
+    public Plane getMinCruisingSpeedPlane(List<Plane> planes) {
+        return Collections.min(planes, new CruisingSpeedComparator());
     }
 }
