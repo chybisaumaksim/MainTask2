@@ -1,4 +1,4 @@
-package by.epam.javatraining.chybisau.tasks.maintask02.model.exceptions;
+package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
 /**
  * Created by Maksim Chybisau on 22/03/19.

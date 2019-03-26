@@ -1,15 +1,17 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.controller;
 
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.entities.*;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.exceptions.PersistException;
-import by.epam.javatraining.chybisau.tasks.maintask02.util.Datas;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.Fleet;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An124;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Airbus_A320neo;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_300;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_500;
+import by.epam.javatraining.chybisau.tasks.maintask02.util.PersistException;
+import by.epam.javatraining.chybisau.tasks.maintask02.util.Initializer;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.ConsoleView;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.View;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.logging.Logger;
 
 /**
  * Created by Maksim Chybisau on 22/03/19.
@@ -18,41 +20,33 @@ import java.util.List;
  */
 
 public class Main {
+//    private static final Logger logger;
+//
+//    static {
+//        logger =  Logger.getLogger(Main.class);
+//    }
 
     public static void main(String[] args) throws IOException, PersistException {
         View view = new ConsoleView();
-        Boeing737_300 boeing737_300 = new Boeing737_300();
-        Boeing737_500 boeing737_500 = new Boeing737_500();
-        Boeing737_800 boeing737_800 = new Boeing737_800();
+        Initializer initializer = new Initializer();
+        Fleet fleet = new Fleet();
 
-        Datas datas = new Datas();
-        Aircraft aircraft = new Aircraft();
-//        try {
-//        List<String> list = datas.getData("Boeing737_300.txt");
-//
-//        for (String aList : list) {
-//            Aircraft.add(createFactory.create(aList));
-//        }
-//        } catch (PersistException e) {
-//            e.printStackTrace();
-//        }
+        Boing737_500 boing737500 = new Boing737_500(6860.0, 840.0, 2800.0, 330.0);
+        Boing737_300 boing737300 = new Boing737_300();
+        Airbus_A320neo airbus_A320neo = new Airbus_A320neo();
+        Airbus_A320neo airbus_A320neo2 = new Airbus_A320neo(6860.0, 840.0, 2800.0, 330.0);
+        An124 an124 = new An124();
+        boing737300 = (Boing737_300) initializer.initializePassangerPlane(boing737300);
+        boing737500 = (Boing737_500) initializer.initializePassangerPlane(boing737500);
+        airbus_A320neo = (Airbus_A320neo) initializer.initializePassangerPlane(airbus_A320neo);
+        an124 = (An124) initializer.initializeCargoPlane(an124);
+        fleet.add(boing737500);
+        fleet.add(boing737300);
+        fleet.add(airbus_A320neo);
+        fleet.add(an124);
+        fleet.add(airbus_A320neo2);
 
-List<Aircraft> allPanes= new ArrayList<Aircraft>();
-        allPanes.add(boeing737_300);
-
-
-
-
-
-//        try {
-//            BoingFactory boingFactory=new BoingFactory();
-//            boingFactory.get
-//
-//
-//Datas.getData()
-
-
-//    }
+        view.print(fleet);
     }
 }
 

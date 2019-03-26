@@ -1,7 +1,5 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
-import by.epam.javatraining.chybisau.tasks.maintask02.model.exceptions.PersistException;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,16 +9,16 @@ import java.util.List;
  *
  * @version 0.0.1
  */
-public class Datas {
+public class DataReceiver {
 
-    public static List<String> getData(String path) throws PersistException, IOException {
+    static List<String> getData(String path) throws PersistException{
         BufferedReader is = null;
         String i;
-        List<String> boingList = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         try {
             is = new BufferedReader(new FileReader(path));
             while ((i = is.readLine()) != null) {
-                boingList.add(i);
+                list.add(i);
             }
         } catch (FileNotFoundException e) {
             throw new PersistException("Файл не найден.", e);
@@ -35,6 +33,6 @@ public class Datas {
                 System.err.println("Ошибка закрытия потока InputStream" + e.getMessage());
             }
         }
-        return boingList;
+        return list;
     }
 }

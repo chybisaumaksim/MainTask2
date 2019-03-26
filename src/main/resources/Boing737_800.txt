@@ -1,8 +1,0 @@
-MaximumTakeOffWeight = 63320
-FlightRange = 5425
-CruisingSpeed = 853
-MaximumFlightHeight = 12500
-HourlyFuelConsumption = 2800
-SpecificFuelConsumption = 20.5
- = 160numberOfSeatsEcomomy = 189
-                                     numberOfSeatsBusinessAndEconomy
