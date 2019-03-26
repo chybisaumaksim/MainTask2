@@ -1,10 +1,12 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An124;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An225;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Airbus_A320neo;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_300;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_500;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder.MaxMinCargoCapacityFinder;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.FlightRangeComparator;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -28,17 +30,22 @@ public class CargoCapacityComparatorTest {
     Airbus_A320neo airbus_A320neo = new Airbus_A320neo(6850, 830, 2700, 330);
     An124 an124 = new An124(5425, 853, 12_600, 120_000);
     An225 an225 = new An225(15_400, 800, 15_900, 250_000);
-    CargoCapacityComparator ccc = new CargoCapacityComparator();
 
     @Test
-    public void testCompare() {
-        List expected = new ArrayList();
+    public void testCompareOne() {
+        List<CargoPlane> planes = new ArrayList<>();
+        planes.add(an225);
+        planes.add(an124);
+        Collections.sort(planes, new CargoCapacityComparator());
+        List<CargoPlane> expected = new ArrayList<>();
         expected.add(an124);
         expected.add(an225);
-        List actual = new ArrayList();
-        expected.add(an124);
-        expected.add(an225);
-        Collections.sort(expected, new CargoCapacityComparator());
-        assertEquals(expected, actual);
+        assertEquals(expected, planes);
+    }
+
+    @Test
+    public void testCompareTwo() {
+        double exp=-130000;
+        assertEquals(exp, new CargoCapacityComparator().compare(an124, an225), 0.000);
     }
 }

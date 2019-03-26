@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a7e4a905-b40a-4018-860c-e1337eabc4ad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/PassangerCapacityFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/PassangerCapacityFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,62 +72,8 @@
       <file leaf-file-name="MaxMinCruisingSpeedFinderTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/cruisingspeedfinder/MaxMinCruisingSpeedFinderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxMinFlightRangeFinderTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/flighrangefinder/MaxMinFlightRangeFinderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="29" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxMinFuelConsumptionFinderTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/fuelconsumptiondinder/MaxMinFuelConsumptionFinderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxMinCargoCapacityFinderTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="28" selection-start-line="28" selection-end-line="32" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxMinCargoCapacityFinder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxMinPassangerCapacityFinderTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinderTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaxMinPassangerCapacityFinder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="-132">
+              <caret line="15" selection-start-line="15" selection-end-line="20" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,36 +81,101 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JDK15AnnotationFinder.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/annotations/JDK15AnnotationFinder.class">
+      <file leaf-file-name="CargoCapacityComparatorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="116" selection-start-line="116" selection-end-line="116" />
+            <state relative-caret-position="364">
+              <caret line="48" column="86" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="48" selection-end-column="86" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConstructorOrMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/ConstructorOrMethod.class">
+      <file leaf-file-name="CruisingSpeedComparatorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="330">
+              <caret line="50" column="5" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="50" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlightRangeComparatorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PassangerCapacityComparatorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FuelConsumptionComparatorTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding>
-                <element signature="e#1078#1079#0" expanded="true" />
+                <element signature="docComment;class#FuelConsumptionComparatorTest#0" />
+                <element signature="method#testCompareTwo#0;class#FuelConsumptionComparatorTest#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseTestMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/BaseTestMethod.class">
+      <file leaf-file-name="CargoCapacityComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="144" selection-start-line="144" selection-end-line="144" />
+            <state relative-caret-position="286">
+              <caret line="20" selection-start-line="20" selection-start-column="2" selection-end-line="23" selection-end-column="7" />
               <folding>
-                <element signature="e#4995#4996#0" expanded="true" />
-                <element signature="e#17445#17446#0" expanded="true" />
-                <element signature="e#17481#17482#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CruisingSpeedComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FuelConsumptionComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlightRangeComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,7 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/Sorter.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/maxspeadcomparation/MaxFightRangeComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/maxspeadcomparation/FlightRangeComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/CruisingSpeedComparator.java" />
@@ -214,17 +228,10 @@
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/Initializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/DataReceiver.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/data/fleet/planes/cargoplane/CargoPlane.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/controller/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/data/fleet/planes/cargoplane/entities/An225.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/data/fleet/planes/cargoplane/entities/An124.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/fuelconsumptiondinder/MaxMinFuelConsumptionFinderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/flighrangefinder/MaxMinFlightRangeFinderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/CargoCapacityFinderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/CargoCapacityFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinder.java" />
@@ -233,6 +240,14 @@
         <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/PassangerCapacityFinder.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/PassangerCapacityFinderTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/flighrangefinder/MaxMinFlightRangeFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/fuelconsumptiondinder/MaxMinFuelConsumptionFinderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" />
       </list>
     </option>
   </component>
@@ -362,8 +377,7 @@
               <item name="maintask02" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="find" type="462c0819:PsiDirectoryNode" />
-              <item name="capacityfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
@@ -374,8 +388,44 @@
               <item name="maintask02" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="find" type="462c0819:PsiDirectoryNode" />
-              <item name="cruisingspeedfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="cargocapacitycomparator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="maintask02" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="cruisingspeedcomparator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="maintask02" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="fuelconsumptioncomparator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="maintask02" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="maxspeadcomparator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
@@ -422,16 +472,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
               <item name="find" type="462c0819:PsiDirectoryNode" />
-              <item name="capacityfinder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="find" type="462c0819:PsiDirectoryNode" />
               <item name="cruisingspeedfinder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,18 +481,7 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="find" type="462c0819:PsiDirectoryNode" />
-              <item name="flighrangefinder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="find" type="462c0819:PsiDirectoryNode" />
-              <item name="fuelconsumptiondinder" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
@@ -462,6 +491,47 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
               <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="cargocapacitycomparator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="cruisingspeedcomparator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="fuelconsumptioncomparator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="maxspeadcomparator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="passangercapacitycomparator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -535,7 +605,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MaxMinFuelConsumptionFinderTest.testGetMinFuelConsumptionPlane">
+  <component name="RunManager" selected="TestNG.FuelConsumptionComparatorTest.testCompareTwo">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -578,20 +648,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxMinCargoCapacityFinderTest.testGetMinCargoCapacityPlane" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CargoCapacityComparatorTest.testCompareOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Aircompany" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder.*" />
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder.MaxMinCargoCapacityFinderTest" />
-      <option name="METHOD_NAME" value="testGetMinCargoCapacityPlane" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator.CargoCapacityComparatorTest" />
+      <option name="METHOD_NAME" value="testCompareOne" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
@@ -607,20 +677,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="MaxMinFuelConsumptionFinderTest.testGetMaxFuelConsumptionPlane" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CruisingSpeedComparatorTest.testCompareOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Aircompany" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.fuelconsumptiondinder.*" />
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.fuelconsumptiondinder" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.fuelconsumptiondinder.MaxMinFuelConsumptionFinderTest" />
-      <option name="METHOD_NAME" value="testGetMaxFuelConsumptionPlane" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparatorTest" />
+      <option name="METHOD_NAME" value="testCompareOne" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
@@ -636,20 +706,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="MaxMinFuelConsumptionFinderTest.testGetMinFuelConsumptionPlane" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CruisingSpeedComparatorTest.testCompareTwo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Aircompany" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.fuelconsumptiondinder.*" />
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.fuelconsumptiondinder" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.fuelconsumptiondinder.MaxMinFuelConsumptionFinderTest" />
-      <option name="METHOD_NAME" value="testGetMinFuelConsumptionPlane" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparatorTest" />
+      <option name="METHOD_NAME" value="testCompareTwo" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
@@ -665,20 +735,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="MaxMinPassangerCapacityFinderTest.testGetMaxPassangerCapacityPlane" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FuelConsumptionComparatorTest.testCompareOne" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Aircompany" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder.*" />
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder.MaxMinPassangerCapacityFinderTest" />
-      <option name="METHOD_NAME" value="testGetMaxPassangerCapacityPlane" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparatorTest" />
+      <option name="METHOD_NAME" value="testCompareOne" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
@@ -694,20 +764,20 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="MaxMinPassangerCapacityFinderTest.testGetMinPassangerCapacityPlane" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FuelConsumptionComparatorTest.testCompareTwo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Aircompany" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder.*" />
+          <option name="PATTERN" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacityfinder.MaxMinPassangerCapacityFinderTest" />
-      <option name="METHOD_NAME" value="testGetMinPassangerCapacityPlane" />
+      <option name="PACKAGE_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator" />
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparatorTest" />
+      <option name="METHOD_NAME" value="testCompareTwo" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" />
@@ -750,19 +820,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="TestNG.MaxMinCargoCapacityFinderTest.testGetMinCargoCapacityPlane" />
-      <item itemvalue="TestNG.MaxMinPassangerCapacityFinderTest.testGetMaxPassangerCapacityPlane" />
-      <item itemvalue="TestNG.MaxMinPassangerCapacityFinderTest.testGetMinPassangerCapacityPlane" />
-      <item itemvalue="TestNG.MaxMinFuelConsumptionFinderTest.testGetMaxFuelConsumptionPlane" />
-      <item itemvalue="TestNG.MaxMinFuelConsumptionFinderTest.testGetMinFuelConsumptionPlane" />
+      <item itemvalue="TestNG.CargoCapacityComparatorTest.testCompareOne" />
+      <item itemvalue="TestNG.CruisingSpeedComparatorTest.testCompareOne" />
+      <item itemvalue="TestNG.CruisingSpeedComparatorTest.testCompareTwo" />
+      <item itemvalue="TestNG.FuelConsumptionComparatorTest.testCompareOne" />
+      <item itemvalue="TestNG.FuelConsumptionComparatorTest.testCompareTwo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MaxMinFuelConsumptionFinderTest.testGetMinFuelConsumptionPlane" />
-        <item itemvalue="TestNG.MaxMinFuelConsumptionFinderTest.testGetMaxFuelConsumptionPlane" />
-        <item itemvalue="TestNG.MaxMinPassangerCapacityFinderTest.testGetMinPassangerCapacityPlane" />
-        <item itemvalue="TestNG.MaxMinPassangerCapacityFinderTest.testGetMaxPassangerCapacityPlane" />
-        <item itemvalue="TestNG.MaxMinCargoCapacityFinderTest.testGetMinCargoCapacityPlane" />
+        <item itemvalue="TestNG.FuelConsumptionComparatorTest.testCompareTwo" />
+        <item itemvalue="TestNG.FuelConsumptionComparatorTest.testCompareOne" />
+        <item itemvalue="TestNG.CruisingSpeedComparatorTest.testCompareTwo" />
+        <item itemvalue="TestNG.CruisingSpeedComparatorTest.testCompareOne" />
+        <item itemvalue="TestNG.CargoCapacityComparatorTest.testCompareOne" />
       </list>
     </recent_temporary>
   </component>
@@ -866,39 +936,46 @@
       <option name="project" value="LOCAL" />
       <updated>1553626070214</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="9 commit&#10;all find tests">
+      <created>1553626487080</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1553626487080</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MaxMinCruisingSpeedFinderTest_testGetMinCruisingSpeedPlane - 2019.03.26 at 20h 33m 39s.xml">
-      <configuration name="MaxMinCruisingSpeedFinderTest.testGetMinCruisingSpeedPlane" configurationId="TestNG" />
+    <history-entry file="CruisingSpeedComparatorTest_testCompareOne - 2019.03.26 at 21h 16m 05s.xml">
+      <configuration name="CruisingSpeedComparatorTest.testCompareOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinCruisingSpeedFinderTest_testGetMinCruisingSpeedPlane - 2019.03.26 at 20h 33m 49s.xml">
-      <configuration name="MaxMinCruisingSpeedFinderTest.testGetMinCruisingSpeedPlane" configurationId="TestNG" />
+    <history-entry file="CruisingSpeedComparatorTest_testCompareOne - 2019.03.26 at 21h 16m 07s.xml">
+      <configuration name="CruisingSpeedComparatorTest.testCompareOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinCruisingSpeedFinderTest_testGetMinCruisingSpeedPlane - 2019.03.26 at 20h 33m 56s.xml">
-      <configuration name="MaxMinCruisingSpeedFinderTest.testGetMinCruisingSpeedPlane" configurationId="TestNG" />
+    <history-entry file="CruisingSpeedComparatorTest_testCompareOne - 2019.03.26 at 21h 17m 27s.xml">
+      <configuration name="CruisingSpeedComparatorTest.testCompareOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinCruisingSpeedFinderTest_testGetMinCruisingSpeedPlane - 2019.03.26 at 20h 34m 07s.xml">
-      <configuration name="MaxMinCruisingSpeedFinderTest.testGetMinCruisingSpeedPlane" configurationId="TestNG" />
+    <history-entry file="CruisingSpeedComparatorTest_testCompareTwo - 2019.03.26 at 21h 18m 33s.xml">
+      <configuration name="CruisingSpeedComparatorTest.testCompareTwo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinFlightRangeFinderTest_testGetMaxFlightRangePlane - 2019.03.26 at 20h 34m 35s.xml">
-      <configuration name="MaxMinFlightRangeFinderTest.testGetMaxFlightRangePlane" configurationId="TestNG" />
+    <history-entry file="CruisingSpeedComparatorTest_testCompareTwo - 2019.03.26 at 21h 18m 51s.xml">
+      <configuration name="CruisingSpeedComparatorTest.testCompareTwo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinFlightRangeFinderTest_testGetMaxFlightRangePlane - 2019.03.26 at 20h 37m 53s.xml">
-      <configuration name="MaxMinFlightRangeFinderTest.testGetMaxFlightRangePlane" configurationId="TestNG" />
+    <history-entry file="FuelConsumptionComparatorTest_testCompareOne - 2019.03.26 at 21h 21m 01s.xml">
+      <configuration name="FuelConsumptionComparatorTest.testCompareOne" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinFlightRangeFinderTest_testGetMaxFlightRangePlane - 2019.03.26 at 20h 38m 16s.xml">
-      <configuration name="MaxMinFlightRangeFinderTest.testGetMaxFlightRangePlane" configurationId="TestNG" />
+    <history-entry file="FuelConsumptionComparatorTest_testCompareTwo - 2019.03.26 at 21h 21m 30s.xml">
+      <configuration name="FuelConsumptionComparatorTest.testCompareTwo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinFlightRangeFinderTest_testGetMinFlightRangePlane - 2019.03.26 at 20h 39m 31s.xml">
-      <configuration name="MaxMinFlightRangeFinderTest.testGetMinFlightRangePlane" configurationId="TestNG" />
+    <history-entry file="FuelConsumptionComparatorTest_testCompareTwo - 2019.03.26 at 21h 21m 48s.xml">
+      <configuration name="FuelConsumptionComparatorTest.testCompareTwo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinCargoCapacityFinderTest_testGetMaxCargoCapacityPlane - 2019.03.26 at 20h 47m 11s.xml">
-      <configuration name="MaxMinCargoCapacityFinderTest.testGetMaxCargoCapacityPlane" configurationId="TestNG" />
+    <history-entry file="FuelConsumptionComparatorTest_testCompareTwo - 2019.03.26 at 21h 22m 08s.xml">
+      <configuration name="FuelConsumptionComparatorTest.testCompareTwo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MaxMinCargoCapacityFinderTest_testGetMinCargoCapacityPlane - 2019.03.26 at 20h 47m 29s.xml">
-      <configuration name="MaxMinCargoCapacityFinderTest.testGetMinCargoCapacityPlane" configurationId="TestNG" />
+    <history-entry file="FuelConsumptionComparatorTest_testCompareTwo - 2019.03.26 at 21h 22m 28s.xml">
+      <configuration name="FuelConsumptionComparatorTest.testCompareTwo" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -917,11 +994,11 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32969153" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3585927" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30311233" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25321338" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25321338" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32882273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1006,7 +1083,8 @@
     <MESSAGE value="7 commit&#10;initialization&#10;+packages" />
     <MESSAGE value="8 commit&#10;tests" />
     <MESSAGE value="9 commit&#10;part of tests find" />
-    <option name="LAST_COMMIT_MESSAGE" value="9 commit&#10;part of tests find" />
+    <MESSAGE value="9 commit&#10;all find tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="9 commit&#10;all find tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,7 +1102,7 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1112,56 +1190,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1169,13 +1197,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1281,13 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="58" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="29" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -1319,26 +1333,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#668#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/cruisingspeedfinder/MaxMinCruisingSpeedFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1409,38 +1403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/fuelconsumptiondinder/MaxMinFuelConsumptionFinderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/flighrangefinder/MaxMinFlightRangeFinderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="29" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/cruisingspeedfinder/MaxMinCruisingSpeedFinderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="28" selection-start-line="28" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="192">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1454,10 +1420,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/flighrangefinder/MaxMinFlightRangeFinderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="38" column="90" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="38" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/fuelconsumptiondinder/MaxMinFuelConsumptionFinderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" selection-start-line="23" selection-end-line="27" selection-end-column="58" />
+          <folding>
+            <element signature="docComment;class#MaxMinFuelConsumptionFinderTest#0" />
+            <element signature="method#testGetMaxFuelConsumptionPlane#0;class#MaxMinFuelConsumptionFinderTest#0" />
+            <element signature="method#testGetMinFuelConsumptionPlane#0;class#MaxMinFuelConsumptionFinderTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="39" column="94" lean-forward="true" selection-start-line="36" selection-start-column="6" selection-end-line="39" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/cruisingspeedfinder/MaxMinCruisingSpeedFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="37" column="4" lean-forward="true" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+          <caret line="20" selection-start-line="20" selection-start-column="2" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/maxspeadcomparator/FlightRangeComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="48" column="86" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="48" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/cruisingspeedfinder/MaxMinCruisingSpeedFinderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="15" selection-start-line="15" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="docComment;class#FuelConsumptionComparatorTest#0" />
+            <element signature="method#testCompareTwo#0;class#FuelConsumptionComparatorTest#0" />
+          </folding>
         </state>
       </provider>
     </entry>
