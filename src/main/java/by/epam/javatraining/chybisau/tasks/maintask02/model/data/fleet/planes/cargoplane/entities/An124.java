@@ -18,6 +18,11 @@ public class An124 extends CargoPlane {
         this.cargoCapacity = cargoCapacity;
     }
 
+    public An124(double flightRange, double cruisingSpeed, double fuelConsumption, double cargoCapacity) {
+        super(flightRange, cruisingSpeed, fuelConsumption);
+        this.cargoCapacity = cargoCapacity;
+    }
+
     public An124() throws IOException, PersistException {
         super();
     }
@@ -54,7 +59,6 @@ public class An124 extends CargoPlane {
 
     @Override
     public String toString() {
-        return "An124{"
-                + super.toString() + "cargoCapacity=" + cargoCapacity + '}';
+        return "An124{" + super.toString() + "cargoCapacity= " + cargoCapacity + '}';
     }
 }

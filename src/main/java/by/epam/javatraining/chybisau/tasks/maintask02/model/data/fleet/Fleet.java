@@ -1,12 +1,9 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
-
+import org.apache.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 /**
  * Created by Maksim Chybisau on 22/03/19.
@@ -14,11 +11,11 @@ import java.util.logging.Logger;
  * @version 0.0.1
  */
 public class Fleet {
-//    private static final Logger logger;
+    private static final Logger logger;
 
-    //    static {
-//        logger = Logger.getLogger(Fleet.class);
-//    }
+    static {
+        logger =  Logger.getRootLogger();
+    }
     private List<Plane> planes;
 
     public Fleet() {

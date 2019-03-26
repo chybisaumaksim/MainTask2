@@ -1,7 +1,9 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.controller.Main;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.util.List;
@@ -12,9 +14,12 @@ import java.util.List;
  * @version 0.0.1
  */
 public class Initializer {
-
+    private static final Logger logger;
     private static List<String> planeList;
     private String PATH;
+    static {
+        logger =  Logger.getRootLogger();
+    }
 
     public static List<String> getPlaneList() {
         return planeList;

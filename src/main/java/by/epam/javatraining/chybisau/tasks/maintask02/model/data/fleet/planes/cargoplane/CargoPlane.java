@@ -18,6 +18,12 @@ public class CargoPlane extends Plane {
     public CargoPlane() throws IOException, PersistException {
     }
 
+    public CargoPlane(double flightRange, double cruisingSpeed, double fuelConsumption) {
+        super(flightRange, cruisingSpeed, fuelConsumption);
+        this.cargoCapacity = cargoCapacity;
+
+    }
+
     public double getCargoCapacity() {
         return cargoCapacity;
     }

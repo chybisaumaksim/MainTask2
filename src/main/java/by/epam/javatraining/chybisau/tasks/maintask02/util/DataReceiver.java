@@ -1,5 +1,7 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
+import org.apache.log4j.Logger;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +12,11 @@ import java.util.List;
  * @version 0.0.1
  */
 public class DataReceiver {
+    private static final Logger logger;
+
+    static {
+        logger = Logger.getRootLogger();
+    }
 
     static List<String> getData(String path) throws PersistException {
         BufferedReader is = null;
