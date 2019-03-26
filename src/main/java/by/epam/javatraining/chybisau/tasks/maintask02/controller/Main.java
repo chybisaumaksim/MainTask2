@@ -1,17 +1,23 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.controller;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.Fleet;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An124;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Airbus_A320neo;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_300;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_500;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.maxmincruisingspeedfinder.MaxMinCruisingSpeedFinder;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomporation.CruisingSpeedComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparation.FuelConsumptionComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparation.FlightRangeComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.PersistException;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.Initializer;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.ConsoleView;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.View;
 
 import java.io.IOException;
-import java.util.logging.Logger;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by Maksim Chybisau on 22/03/19.
@@ -45,8 +51,19 @@ public class Main {
         fleet.add(airbus_A320neo);
         fleet.add(an124);
         fleet.add(airbus_A320neo2);
+//        view.print(fleet);
+        List<Plane> planes = fleet.getPlanes();
+//sort
+        Collections.sort(planes, new FlightRangeComparator());
+        Collections.sort(planes, new CruisingSpeedComparator());
+        Collections.sort(planes, new FuelConsumptionComparator());
+//        FlightRangeComparator frc = new FlightRangeComparator();
+//        frc.sortFlightRange(planes);
+//find
+        MaxMinCruisingSpeedFinder maxMinCruisingSpeedFinder = new MaxMinCruisingSpeedFinder();
+        System.out.println(maxMinCruisingSpeedFinder.getMaxCruisingSpeedPlane(planes));
 
-        view.print(fleet);
+
     }
 }
 

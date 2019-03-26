@@ -19,8 +19,6 @@ public class Fleet {
 //    }
     private List<Plane> planes;
 
-
-
     public Fleet() {
         planes = new ArrayList<>();
     }
