@@ -27,5 +27,4 @@ public class Creator {
     public Plane createPlane() {
         return new Plane();
     }
-
 }

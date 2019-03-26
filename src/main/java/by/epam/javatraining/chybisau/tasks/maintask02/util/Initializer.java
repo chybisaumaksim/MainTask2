@@ -14,7 +14,7 @@ import java.util.List;
 public class Initializer {
 
     private static List<String> planeList;
-    private String path;
+    private String PATH;
 
     public static List<String> getPlaneList() {
         return planeList;
@@ -24,14 +24,14 @@ public class Initializer {
         Initializer.planeList = planeList;
     }
 
-    public Initializer() throws IOException, PersistException {
+    public Initializer(String path) throws IOException, PersistException {
+        this.PATH = path;
     }
 
     public PassangerPlane initializePassangerPlane(PassangerPlane passangerPlane) throws IOException, PersistException {
         try {
-            path = String.valueOf(passangerPlane.getClass().getSimpleName()) + ".txt";
-            String initPath = "C:\\Program Files\\Java\\Aircompany\\src\\main\\resources\\";
-            planeList = DataReceiver.getData(initPath + path);
+            String pathOfClass = String.valueOf(passangerPlane.getClass().getSimpleName()) + ".txt";
+            planeList = DataReceiver.getData(PATH + pathOfClass);
             passangerPlane.setFlightRange(getFlightRange());
             passangerPlane.setCruisingSpeed(getCruisingSpeed());
             passangerPlane.setFuelConsumption(getFuelConsumption());
@@ -69,6 +69,4 @@ public class Initializer {
     public double getCargoCapacity() {
         return Double.parseDouble(String.valueOf(planeList.get(3)));
     }
-
-
 }

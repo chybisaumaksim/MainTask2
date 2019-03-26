@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class DataReceiver {
 
-    static List<String> getData(String path) throws PersistException{
+    static List<String> getData(String path) throws PersistException {
         BufferedReader is = null;
         String i;
         List<String> list = new ArrayList<>();
@@ -24,7 +24,7 @@ public class DataReceiver {
             throw new PersistException("Файл не найден.", e);
         } catch (IOException e) {
             throw new PersistException("Ошибка при работе с потоком fileInputStream", e);
-        }  finally {
+        } finally {
             try {
                 if (is != null) {
                     is.close();

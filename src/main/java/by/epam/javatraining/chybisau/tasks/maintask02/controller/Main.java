@@ -35,8 +35,9 @@ public class Main {
 //    }
 
     public static void main(String[] args) throws IOException, PersistException {
+        String path= "C:\\Program Files\\Java\\Aircompany\\src\\main\\resources\\";
         View view = new ConsoleView();
-        Initializer initializer = new Initializer();
+        Initializer initializer = new Initializer(path);
         Fleet fleet = new Fleet();
         MaxMinCruisingSpeedFinder maxMinCruisingSpeedFinder = new MaxMinCruisingSpeedFinder();
         MaxMinFuelConsumptionFinder maxMinFuelConsumptionFinder = new MaxMinFuelConsumptionFinder();
@@ -66,13 +67,6 @@ public class Main {
         Collections.sort(planes, new FuelConsumptionComparator());
 //        CargoCapacityComparator frc = new CargoCapacityComparator();
 //        frc.sortFlightRange(planes);
-//finding of objects
-        view.print(maxMinCruisingSpeedFinder.getMaxCruisingSpeedPlane(planes));
-        view.print(maxMinCruisingSpeedFinder.getMinCruisingSpeedPlane(planes));
-        view.print(maxMinFuelConsumptionFinder.getMaxFuelConsumptionPlane(planes));
-        view.print(maxMinFuelConsumptionFinder.getMinFuelConsumptionPlane(planes));
-        view.print(maxMinFlightRangeFinder.getMaxFlightRangePlane(planes));
-        view.print(maxMinFlightRangeFinder.getMinFlightRangePlane(planes));
     }
 }
 
