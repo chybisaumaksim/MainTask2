@@ -1,4 +1,4 @@
-package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomporation;
+package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 

@@ -1,7 +1,7 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.cruisingspeedfinder;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomporation.CruisingSpeedComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparator;
 
 import java.util.Collections;
 import java.util.List;

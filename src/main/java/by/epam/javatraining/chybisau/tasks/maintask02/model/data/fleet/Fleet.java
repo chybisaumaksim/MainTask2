@@ -1,6 +1,8 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +16,7 @@ import java.util.logging.Logger;
 public class Fleet {
 //    private static final Logger logger;
 
-//    static {
+    //    static {
 //        logger = Logger.getLogger(Fleet.class);
 //    }
     private List<Plane> planes;

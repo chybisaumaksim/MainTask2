@@ -1,7 +1,7 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.fuelconsumptiondinder;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparation.FuelConsumptionComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparator;
 
 import java.util.Collections;
 import java.util.List;

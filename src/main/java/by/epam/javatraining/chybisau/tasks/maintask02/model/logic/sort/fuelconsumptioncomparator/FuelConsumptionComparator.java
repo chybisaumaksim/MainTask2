@@ -1,4 +1,4 @@
-package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparation;
+package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 

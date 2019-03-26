@@ -1,4 +1,4 @@
-package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparation;
+package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 
@@ -17,6 +17,6 @@ public class FlightRangeComparator implements Comparator<Plane> {
     }
 
 //    public void sortFlightRange(List<Plane> planes) {
-//        Collections.sort(planes, new FlightRangeComparator());
+//        Collections.sort(planes, new CargoCapacityComparator());
 //    }
 }

@@ -9,9 +9,9 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.pa
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.cruisingspeedfinder.MaxMinCruisingSpeedFinder;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.flighrangefinder.MaxMinFlightRangeFinder;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.fuelconsumptiondinder.MaxMinFuelConsumptionFinder;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomporation.CruisingSpeedComparator;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparation.FuelConsumptionComparator;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparation.FlightRangeComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.FlightRangeComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.PersistException;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.Initializer;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.ConsoleView;
@@ -38,12 +38,14 @@ public class Main {
         View view = new ConsoleView();
         Initializer initializer = new Initializer();
         Fleet fleet = new Fleet();
-
+        MaxMinCruisingSpeedFinder maxMinCruisingSpeedFinder = new MaxMinCruisingSpeedFinder();
+        MaxMinFuelConsumptionFinder maxMinFuelConsumptionFinder = new MaxMinFuelConsumptionFinder();
+        MaxMinFlightRangeFinder maxMinFlightRangeFinder = new MaxMinFlightRangeFinder();
 //creating objects
-        Boing737_500 boing737500 = new Boing737_500(6860.0, 840.0, 2800.0, 330.0);
+        Boing737_500 boing737500 = new Boing737_500();
         Boing737_300 boing737300 = new Boing737_300();
         Airbus_A320neo airbus_A320neo = new Airbus_A320neo();
-        Airbus_A320neo airbus_A320neo2 = new Airbus_A320neo(6860.0, 840.0, 2800.0, 330.0);
+        Airbus_A320neo airbus_A320neo2 = new Airbus_A320neo(6860.0, 840.0, 2750.0, 300.0);
         An124 an124 = new An124();
 //initializing objects
         boing737300 = (Boing737_300) initializer.initializePassangerPlane(boing737300);
@@ -56,19 +58,15 @@ public class Main {
         fleet.add(airbus_A320neo);
         fleet.add(an124);
         fleet.add(airbus_A320neo2);
-        view.print(fleet);
+//list of objects
         List<Plane> planes = fleet.getPlanes();
 //sorting of objects
         Collections.sort(planes, new FlightRangeComparator());
         Collections.sort(planes, new CruisingSpeedComparator());
         Collections.sort(planes, new FuelConsumptionComparator());
-//        FlightRangeComparator frc = new FlightRangeComparator();
+//        CargoCapacityComparator frc = new CargoCapacityComparator();
 //        frc.sortFlightRange(planes);
 //finding of objects
-        MaxMinCruisingSpeedFinder maxMinCruisingSpeedFinder = new MaxMinCruisingSpeedFinder();
-        MaxMinFuelConsumptionFinder maxMinFuelConsumptionFinder = new MaxMinFuelConsumptionFinder();
-        MaxMinFlightRangeFinder maxMinFlightRangeFinder = new MaxMinFlightRangeFinder();
-
         view.print(maxMinCruisingSpeedFinder.getMaxCruisingSpeedPlane(planes));
         view.print(maxMinCruisingSpeedFinder.getMinCruisingSpeedPlane(planes));
         view.print(maxMinFuelConsumptionFinder.getMaxFuelConsumptionPlane(planes));

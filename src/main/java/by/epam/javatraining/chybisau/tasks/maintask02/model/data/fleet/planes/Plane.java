@@ -1,5 +1,10 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
+
+import java.util.List;
+
 /**
  * Created by Maksim Chybisau on 22/03/19.
  *

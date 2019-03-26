@@ -4,6 +4,7 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Pl
 import by.epam.javatraining.chybisau.tasks.maintask02.util.PersistException;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by Maksim Chybisau on 22/03/19.
@@ -11,7 +12,6 @@ import java.io.IOException;
  * @version 0.0.1
  */
 public class PassangerPlane extends Plane {
-
     private double passangerCapacity;
 
     public PassangerPlane() throws IOException, PersistException {
@@ -21,6 +21,7 @@ public class PassangerPlane extends Plane {
     public PassangerPlane(double flightRange, double cruisingSpeed, double fuelConsumption) {
         super(flightRange, cruisingSpeed, fuelConsumption);
         this.passangerCapacity = passangerCapacity;
+
     }
 
     public double getPassangerCapacity() {
