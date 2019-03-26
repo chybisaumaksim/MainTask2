@@ -12,12 +12,12 @@ import java.util.List;
  *
  * @version 0.0.1
  */
-public class PassangerCapacityFinder {
-    public Plane getMaxCargoCapacityPlane(List<PassangerPlane> passangerPlanes) {
+public class MaxMinPassangerCapacityFinder {
+    public Plane getMaxPassangerCapacityPlane(List<PassangerPlane> passangerPlanes) {
         return Collections.max(passangerPlanes, new PassangerCapacityComparator());
     }
 
-    public Plane getMinCargoCapacityPlane(List<PassangerPlane> passangerPlanes) {
+    public Plane getMinPassangerCapacityPlane(List<PassangerPlane> passangerPlanes) {
         return Collections.min(passangerPlanes, new PassangerCapacityComparator());
     }
 }
