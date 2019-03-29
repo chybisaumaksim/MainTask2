@@ -4,6 +4,7 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.Fleet;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An124;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An225;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Airbus_A320neo;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_300;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_500;
@@ -40,7 +41,8 @@ public class Main {
         Initializer initializer = new Initializer(path);
         Fleet fleet = new Fleet();
 //creating objects
-        Boing737_500 boing737500 = new Boing737_500();
+        PassangerPlane boing737500= new PassangerPlane()
+//        Boing737_500 boing737500 = new Boing737_500();
         Boing737_300 boing737300 = new Boing737_300();
         Airbus_A320neo airbus_A320neo = new Airbus_A320neo();
         Airbus_A320neo airbus_A320neo2 = new Airbus_A320neo(6860.0, 840.0, 2750.0, 300.0);
