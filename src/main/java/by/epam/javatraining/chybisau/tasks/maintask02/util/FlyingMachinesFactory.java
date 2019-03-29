@@ -1,7 +1,7 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters.Helicopter;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopter.Helicopter;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
 

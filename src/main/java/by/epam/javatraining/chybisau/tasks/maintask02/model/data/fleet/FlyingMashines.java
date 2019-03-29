@@ -5,7 +5,7 @@ package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet;
  *
  * @version 0.0.1
  */
-public abstract class FlyingMashines {
+public class FlyingMashines {
 
     private String name;
     private double flightRange;
@@ -43,6 +43,4 @@ public abstract class FlyingMashines {
     public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
-
-    public abstract void add(FlyingMashines flyingMashines);
 }

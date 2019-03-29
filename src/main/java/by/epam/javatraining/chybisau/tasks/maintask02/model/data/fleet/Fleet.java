@@ -1,6 +1,6 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet;
 
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters.Helicopter;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopter.Helicopter;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import org.apache.log4j.Logger;
 
@@ -23,22 +23,26 @@ public class Fleet {
     private List<FlyingMashines> flyingMashine;
     private List<Helicopter> helicopters;
 
-    public List<Helicopter> getHelicopters() {
-        return helicopters;
-    }
-
-    public void setHelicopters(List<Helicopter> helicopters) {
-        this.helicopters = helicopters;
-    }
-
     public Fleet() {
         flyingMashine = new ArrayList<>();
         helicopters = new ArrayList<>();
         planes = new ArrayList<>();
     }
 
-    public void add(Plane plane) {
-        planes.add(plane);
+    public List<FlyingMashines> getFlyingMashine() {
+        return flyingMashine;
+    }
+
+    public void setFlyingMashine(List<FlyingMashines> flyingMashine) {
+        this.flyingMashine = flyingMashine;
+    }
+
+    public List<Helicopter> getHelicopters() {
+        return helicopters;
+    }
+
+    public void setHelicopters(List<Helicopter> helicopters) {
+        this.helicopters = helicopters;
     }
 
     public List<Plane> getPlanes() {
@@ -49,35 +53,26 @@ public class Fleet {
         return flyingMashine;
     }
 
-    public void setFlyingMashines(List<FlyingMashines> flyingMashines) {
-        this.flyingMashine = flyingMashines;
-    }
-
-    public static Logger getLogger() {
-        return logger;
-    }
-
     public void setPlanes(List<Plane> planes) {
         this.planes = planes;
+    }
+
+    public void add(FlyingMashines flyingMashines) {
+        flyingMashine.add(flyingMashines);
+        if (flyingMashines instanceof Plane) {
+            planes.add((Plane) flyingMashines);
+        }
+        if (flyingMashines instanceof Helicopter) {
+            helicopters.add((Helicopter) flyingMashines);
+        }
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (Plane plane : planes) {
-            sb.append(plane).append("\n");
+        for (FlyingMashines fm : flyingMashine) {
+            sb.append(fm).append("\n");
         }
         return sb.toString();
-    }
-
-    public void add(FlyingMashines flyingMashines) {
-        flyingMashine.add(flyingMashines);
-        if(flyingMashines instanceof Plane){
-            planes.add((Plane) flyingMashines);
-        }
-        if(flyingMashines instanceof Helicopter){
-            helicopters.add((Helicopter) flyingMashines);
-        }
-
     }
 }

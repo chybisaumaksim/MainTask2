@@ -1,4 +1,4 @@
-package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters;
+package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopter;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 
@@ -106,7 +106,6 @@ public class Helicopter extends FlyingMashines {
         return "Helicopter{" + "name='" + name + '\'' + ", flightRange=" + flightRange + ", cruisingSpeed=" + cruisingSpeed + ", fuelConsumption=" + fuelConsumption + ", needOfRunway=" + needOfRunway + '}';
     }
 
-    @Override
     public void add(FlyingMashines helicopter) {
         helicopters.add(helicopter);
     }
