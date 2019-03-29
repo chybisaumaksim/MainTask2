@@ -3,7 +3,6 @@ package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.capacity
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator.CargoCapacityComparator;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparator;
 
 import java.util.Collections;
 import java.util.List;
