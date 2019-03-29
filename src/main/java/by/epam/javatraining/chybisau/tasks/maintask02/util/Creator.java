@@ -1,5 +1,6 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters.Helicopter;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
@@ -35,5 +36,9 @@ public class Creator {
 
     public Plane createPlane() {
         return new Plane();
+    }
+
+    public Helicopter createHelicopter() {
+        return new Helicopter();
     }
 }

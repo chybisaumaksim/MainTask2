@@ -1,7 +1,11 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes;
-import by.epam.javatraining.chybisau.tasks.maintask02.controller.Main;
+
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Maksim Chybisau on 22/03/19.
  *
@@ -9,16 +13,17 @@ import org.apache.log4j.Logger;
  */
 
 public class Plane extends FlyingMashines {
-    private static final Logger logger;
-
-    static {
-        logger =  Logger.getLogger(Main.class);
-    }
+//    private static final Logger logger;
+//
+//    static {
+//        logger =  Logger.getLogger(Main.class);
+//    }
 
     private String name;
     private double flightRange;
     private double cruisingSpeed;
     private double fuelConsumption;
+    private List<Plane> planes = new ArrayList<>();
 
     public Plane(String name, double flightRange, double cruisingSpeed, double fuelConsumption) {
         this.name = name;
@@ -30,9 +35,14 @@ public class Plane extends FlyingMashines {
     public Plane() {
     }
 
-    public static Logger getLogger() {
-        return logger;
+    @Override
+    public void add(FlyingMashines plane) {
+        planes.add((Plane)plane);
     }
+
+//    public static Logger getLogger() {
+//        return logger;
+//    }
 
     public String getName() {
         return name;

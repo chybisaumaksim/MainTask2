@@ -1,7 +1,9 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters.Helicopter;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,12 +16,25 @@ public class Fleet {
     private static final Logger logger;
 
     static {
-        logger =  Logger.getRootLogger();
+        logger = Logger.getRootLogger();
     }
+
     private List<Plane> planes;
     private List<FlyingMashines> flyingMashines;
 
+    public List<Helicopter> getHelicopters() {
+        return helicopters;
+    }
+
+    public void setHelicopters(List<Helicopter> helicopters) {
+        this.helicopters = helicopters;
+    }
+
+    private List<Helicopter> helicopters;
+
     public Fleet() {
+        flyingMashines = new ArrayList<>();
+        helicopters = new ArrayList<>();
         planes = new ArrayList<>();
     }
 

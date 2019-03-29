@@ -1,6 +1,7 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters.Helicopter;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
 import org.apache.log4j.Logger;
@@ -39,6 +40,7 @@ public class Initializer {
         this.PATH = path;
     }
 
+
     public static Initializer getInstance() throws IOException, PersistException {
         if (instance == null) {
             instance = new Initializer();
@@ -49,51 +51,10 @@ public class Initializer {
     public Initializer() throws IOException, PersistException {
     }
 
-    public PassangerPlane initializePassangerPlane(PassangerPlane passangerPlane) throws IOException, PersistException {
-        try {
-            String pathOfClass = String.valueOf(passangerPlane.getClass().getSimpleName()) + ".txt";
-            planeList = DataReceiver.getData(PATH + pathOfClass);
-            passangerPlane.setFlightRange(getFlightRange());
-            passangerPlane.setCruisingSpeed(getCruisingSpeed());
-            passangerPlane.setFuelConsumption(getFuelConsumption());
-            passangerPlane.setPassangerCapacity(getPassangerCapacity());
-        } catch (PersistException e) {
-            System.err.println("Ошибка доступа к файлу ");
-        }
-        return passangerPlane;
-    }
-
-    public CargoPlane initializeCargoPlane(CargoPlane cargoPlane) throws IOException, PersistException {
-        cargoPlane.setFlightRange(getFlightRange());
-        cargoPlane.setCruisingSpeed(getCruisingSpeed());
-        cargoPlane.setFuelConsumption(getFuelConsumption());
-        cargoPlane.setCargoCapacity(getCargoCapacity());
-        return cargoPlane;
-    }
-
-    public double getFlightRange() {
-        return Double.parseDouble(planeList.get(0));
-    }
-
-    public double getCruisingSpeed() {
-        return Double.parseDouble(String.valueOf(planeList.get(1)));
-    }
-
-    public double getFuelConsumption() {
-        return Double.parseDouble(String.valueOf(planeList.get(2)));
-    }
-
-    public double getPassangerCapacity() {
-        return Double.parseDouble(String.valueOf(planeList.get(3)));
-    }
-
-    public double getCargoCapacity() {
-        return Double.parseDouble(String.valueOf(planeList.get(3)));
-    }
-
     public void initializeFlyingMachine(PassangerPlane passangerPlane, String datesOfFlyingMachine) {
-        StringTokenizer st = new StringTokenizer(datesOfFlyingMachine);
+        StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         while (st.hasMoreTokens()) {
+            st.nextToken();
             passangerPlane.setName(st.nextToken());
             passangerPlane.setFlightRange(Double.parseDouble(st.nextToken()));
             passangerPlane.setCruisingSpeed(Double.parseDouble(st.nextToken()));
@@ -101,5 +62,30 @@ public class Initializer {
             passangerPlane.setPassangerCapacity(Double.parseDouble(st.nextToken()));
         }
     }
+
+    public void initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) {
+        StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
+        while (st.hasMoreTokens()) {
+            st.nextToken();
+            cargoPlane.setName(st.nextToken());
+            cargoPlane.setFlightRange(Double.parseDouble(st.nextToken()));
+            cargoPlane.setCruisingSpeed(Double.parseDouble(st.nextToken()));
+            cargoPlane.setFuelConsumption(Double.parseDouble(st.nextToken()));
+            cargoPlane.setCargoCapacity(Double.parseDouble(st.nextToken()));
+        }
+    }
+
+    public void initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) {
+        StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
+        while (st.hasMoreTokens()) {
+            st.nextToken();
+            helicopter.setName(st.nextToken());
+            helicopter.setFlightRange(Double.parseDouble(st.nextToken()));
+            helicopter.setCruisingSpeed(Double.parseDouble(st.nextToken()));
+            helicopter.setFuelConsumption(Double.parseDouble(st.nextToken()));
+            helicopter.setNeedOfRunway(Boolean.getBoolean(st.nextToken()));
+        }
+    }
+
 }
 

@@ -24,7 +24,7 @@ public class DataReceiver {
         List<String> list = new ArrayList<>();
         try {
             is = new BufferedReader(new FileReader(path));
-            while ((i = is.readLine()) != null) {
+            while ((i = is.readLine()) != null && i.length()>1) {
                 list.add(i);
             }
         } catch (FileNotFoundException e) {

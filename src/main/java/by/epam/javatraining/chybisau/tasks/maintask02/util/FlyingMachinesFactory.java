@@ -27,23 +27,22 @@ public class FlyingMachinesFactory {
 
     public FlyingMashines create(String datesOfFlyingMachine) throws IOException, PersistException {
         FlyingMashines flyingMashine = null;
-        StringTokenizer st = new StringTokenizer(datesOfFlyingMachine);
+        StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         String planes = st.nextToken();
-//        String[] words = StringTokenizer.devide(stringFromFile);
-        switch (planes) {
-            case PASSANGERPLANE:
-                flyingMashine = creator.createPassengerPlane();
-                initializer.initializeFlyingMachine((PassangerPlane)flyingMashine, datesOfFlyingMachine);
-                break;
-            case CARGOPLANE:
-                flyingMashine = creator.createCargoPlane();
-                initializer.initializeFlyingMachine((CargoPlane)flyingMashine, datesOfFlyingMachine);
-                break;
-//            case HELICOPTER:
-//                flyingMashine = creator.createCargoPlane();
-//                initializer.initializeFlyingMachine((Helicopter)flyingMashine, datesOfFlyingMachine);
-//                break;
-        }
+            switch (planes) {
+                case PASSANGERPLANE:
+                    flyingMashine = creator.createPassengerPlane();
+                    initializer.initializeFlyingMachine((PassangerPlane) flyingMashine, datesOfFlyingMachine);
+                    break;
+                case CARGOPLANE:
+                    flyingMashine = creator.createCargoPlane();
+                    initializer.initializeFlyingMachine((CargoPlane) flyingMashine, datesOfFlyingMachine);
+                    break;
+                case HELICOPTER:
+                    flyingMashine = creator.createHelicopter();
+                    initializer.initializeFlyingMachine((Helicopter) flyingMashine, datesOfFlyingMachine);
+                    break;
+            }
         return flyingMashine;
     }
 }

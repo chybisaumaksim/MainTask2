@@ -18,11 +18,11 @@ import static org.testng.Assert.*;
  */
 
 public class MaxMinCruisingSpeedFinderTest {
-    PassangerPlane boing737500 = new PassangerPlane(8400, 850, 2800, 240);
-    PassangerPlane boing737300 = new PassangerPlane(4400, 910, 2600, 277);
-    PassangerPlane airbus_A320neo = new PassangerPlane(6850, 830, 2700, 330);
-    CargoPlane  an124 = new CargoPlane(5425, 853, 12_600, 120_000);
-    CargoPlane an225 = new CargoPlane(15_400, 800, 15_900, 250_000);
+    PassangerPlane boing737500 = new PassangerPlane("Boing737500", 8400, 850, 2800, 240);
+    PassangerPlane boing737300 = new PassangerPlane("Boing737300",4400, 910, 2600, 277);
+    PassangerPlane airbus_A320neo = new PassangerPlane("Airbus_A320neo",6850, 830, 2700, 330);
+    CargoPlane  an124 = new CargoPlane("An124", 5425, 853, 12_600, 120_000);
+    CargoPlane an225 = new CargoPlane("An225", 15_400, 800, 15_900, 250_000);
 
     @Test
     public void testGetMaxCruisingSpeedPlane() {
