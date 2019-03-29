@@ -19,7 +19,7 @@ public class FlightRangeComparator implements Comparator<FlyingMashines> {
         if (o1 != null && o2 != null) {
             result=(int) (o1.getFlightRange() - o2.getFlightRange());
         }else{
-            System.err.println("Found zero in incoming dates");
+            System.err.println("Found zero in incoming dates in " + getClass().getName());
         }
         return result;
     }

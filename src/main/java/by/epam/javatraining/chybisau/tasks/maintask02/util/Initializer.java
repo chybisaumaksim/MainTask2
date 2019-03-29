@@ -32,7 +32,7 @@ public class Initializer {
     public Initializer() {
     }
 
-    public void initializeFlyingMachine(PassangerPlane passangerPlane, String datesOfFlyingMachine) throws PersistException {
+    public PassangerPlane initializeFlyingMachine(PassangerPlane passangerPlane, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
             while (st.hasMoreTokens()) {
@@ -46,9 +46,10 @@ public class Initializer {
         } catch (NoSuchElementException e) {
             throw new PersistException("No such element ", e.getMessage());
         }
+        return passangerPlane;
     }
 
-    public void initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) throws PersistException {
+    public CargoPlane initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
             while (st.hasMoreTokens()) {
@@ -62,9 +63,10 @@ public class Initializer {
         } catch (NoSuchElementException e) {
             throw new PersistException("No such element ", e.getMessage());
         }
+        return cargoPlane;
     }
 
-    public void initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) throws PersistException {
+    public Helicopter initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
             while (st.hasMoreTokens()) {
@@ -78,6 +80,7 @@ public class Initializer {
         } catch (NoSuchElementException e) {
             throw new PersistException("No such element ", e.getMessage());
         }
+        return helicopter;
     }
 }
 

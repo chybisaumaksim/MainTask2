@@ -19,7 +19,7 @@ public class FuelConsumptionComparator implements Comparator<Plane> {
         if (o1 != null && o2 != null) {
             result = (int) (o1.getFuelConsumption() - o2.getFuelConsumption());
         } else {
-            System.err.println("Found zero in incoming dates");
+            System.err.println("Found zero in incoming dates in " + getClass().getName());
         }
         return result;
     }

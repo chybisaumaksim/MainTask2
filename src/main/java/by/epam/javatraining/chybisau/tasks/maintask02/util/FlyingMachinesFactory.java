@@ -15,14 +15,10 @@ import java.util.StringTokenizer;
  */
 public class FlyingMachinesFactory {
 
-    private static final String PASSANGERPLANE = "passangerPlane";
-    private static final String CARGOPLANE = "cargoPlane";
-    private static final String HELICOPTER = "helicopter";
-
     private Creator creator = Creator.getInstance();
     private Initializer initializer = Initializer.getInstance();
 
-    public FlyingMachinesFactory() throws IOException, PersistException {
+    public FlyingMachinesFactory() {
     }
 
     public FlyingMashines create(String datesOfFlyingMachine) throws IOException, PersistException {
@@ -31,25 +27,21 @@ public class FlyingMachinesFactory {
             StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
             String datasOfFlyingMashine = st.nextToken();
             switch (datasOfFlyingMashine) {
-                case PASSANGERPLANE:
-                    flyingMashine = creator.createPassengerPlane();
-                    initializer.initializeFlyingMachine((PassangerPlane) flyingMashine, datesOfFlyingMachine);
+                case "passangerPlane":
+                    flyingMashine = initializer.initializeFlyingMachine(creator.createPassengerPlane(), datesOfFlyingMachine);
                     break;
-                case CARGOPLANE:
-                    flyingMashine = creator.createCargoPlane();
-                    initializer.initializeFlyingMachine((CargoPlane) flyingMashine, datesOfFlyingMachine);
+                case "cargoPlane":
+                    flyingMashine = initializer.initializeFlyingMachine(creator.createCargoPlane(), datesOfFlyingMachine);
                     break;
-                case HELICOPTER:
-                    flyingMashine = creator.createHelicopter();
-                    initializer.initializeFlyingMachine((Helicopter) flyingMashine, datesOfFlyingMachine);
+                case "helicopter":
+                    flyingMashine = initializer.initializeFlyingMachine(creator.createHelicopter(), datesOfFlyingMachine);
                     break;
-                default :
-                    System.err.println("Error in creation flying machines. Mismatch dates from file");
+                default:
+                    System.err.println("Error in creation flying machines. Mismatch dates from file" +getClass().getName());
             }
         } catch (PersistException e) {
             throw new PersistException("Error in creation flying machines", e.getMessage());
-        }
-        return flyingMashine;
+        } return flyingMashine;
     }
 }
 

@@ -18,7 +18,7 @@ public class CruisingSpeedComparator implements Comparator<FlyingMashines> {
         if (o1 != null && o2 != null) {
             result = (int) (o1.getCruisingSpeed()-o2.getCruisingSpeed());
         } else {
-            System.err.println("Found zero in incoming dates");
+            System.err.println("Found zero in incoming dates in " + getClass().getName());
         }
         return result;
     }
