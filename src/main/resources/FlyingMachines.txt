@@ -1,1 +1,4 @@
-passangerPlane,
+passangerPlane, Boeing737-500, 8400, 850, 2800, 240
+
+passangerPlane, Boeing737-500, 8400, 850, 2800, 240
+Boeing737-300, 4400, 910, 2600, 277

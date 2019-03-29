@@ -1,10 +1,6 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.controller;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.Fleet;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopter.Helicopter;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.*;
 import org.apache.log4j.Logger;
 
@@ -28,11 +24,14 @@ public class Main {
 
         String pathToFlyingMachines = "C:\\Program Files\\Java\\Aircompany\\src\\main\\resources\\FlyingMachines.txt";
         Fleet fleet = new Fleet();
-        List<String> listOfFlyingMachines = DataReceiver.getData(pathToFlyingMachines);
-        FlyingMachinesFactory flyingMachinesFactory = new FlyingMachinesFactory();
-
-        for (String flyingMachinesFromFile : listOfFlyingMachines) {
-            fleet.add(flyingMachinesFactory.create(flyingMachinesFromFile));
+        try {
+            List<String> listOfFlyingMachines = DataReceiver.getData(pathToFlyingMachines);
+            FlyingMachinesFactory flyingMachinesFactory = new FlyingMachinesFactory();
+            for (String flyingMachinesFromFile : listOfFlyingMachines) {
+                fleet.add(flyingMachinesFactory.create(flyingMachinesFromFile));
+            }
+        } catch (PersistException e) {
+            throw new PersistException("Error in creating flying machines. Reason: " + e.getMessage());
         }
     }
 }

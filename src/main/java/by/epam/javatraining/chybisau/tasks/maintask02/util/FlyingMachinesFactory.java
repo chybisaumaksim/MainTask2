@@ -43,8 +43,9 @@ public class FlyingMachinesFactory {
                     flyingMashine = creator.createHelicopter();
                     initializer.initializeFlyingMachine((Helicopter) flyingMashine, datesOfFlyingMachine);
                     break;
+                default :
+                    System.err.println("Error in creation flying machines. Mismatch dates from file");
             }
-
         } catch (PersistException e) {
             throw new PersistException("Error in creation flying machines", e.getMessage());
         }
