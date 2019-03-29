@@ -18,14 +18,14 @@ public class CargoPlane extends Plane {
     public CargoPlane() throws IOException, PersistException {
     }
 
-    public CargoPlane(double flightRange, double cruisingSpeed, double fuelConsumption) {
-        super(flightRange, cruisingSpeed, fuelConsumption);
+    public CargoPlane(String name, double flightRange, double cruisingSpeed, double fuelConsumption) {
+        super(name, flightRange, cruisingSpeed, fuelConsumption);
         this.cargoCapacity = cargoCapacity;
 
     }
 
-    public CargoPlane(double flightRange, double cruisingSpeed, double fuelConsumption, double cargoCapacity) {
-        super(flightRange, cruisingSpeed, fuelConsumption);
+    public CargoPlane(String name, double flightRange, double cruisingSpeed, double fuelConsumption, double cargoCapacity) {
+        super(name, flightRange, cruisingSpeed, fuelConsumption);
         this.cargoCapacity = cargoCapacity;
     }
 

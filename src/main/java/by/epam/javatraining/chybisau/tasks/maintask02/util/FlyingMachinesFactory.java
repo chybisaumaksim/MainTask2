@@ -1,6 +1,8 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters.Helicopter;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
 
 import java.io.IOException;
@@ -35,14 +37,12 @@ public class FlyingMachinesFactory {
                 break;
             case CARGOPLANE:
                 flyingMashine = creator.createCargoPlane();
-                initializer.initializeFlyingMachine(flyingMashine, datesOfFlyingMachine);
+                initializer.initializeFlyingMachine((CargoPlane)flyingMashine, datesOfFlyingMachine);
                 break;
-            case HELICOPTER:
-                flyingMashine = creator.createCargoPlane();
-                initializer.initializeFlyingMachine(flyingMashine, datesOfFlyingMachine);
-                break;
-
-
+//            case HELICOPTER:
+//                flyingMashine = creator.createCargoPlane();
+//                initializer.initializeFlyingMachine((Helicopter)flyingMashine, datesOfFlyingMachine);
+//                break;
         }
         return flyingMashine;
     }
