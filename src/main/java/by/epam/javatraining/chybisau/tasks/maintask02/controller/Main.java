@@ -1,6 +1,7 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.controller;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.Fleet;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters.Helicopter;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
@@ -36,12 +37,16 @@ public class Main {
         Fleet fleet = new Fleet();
         List<String> listOfFlyingMachines = DataReceiver.getData(pathToFlyingMachines);
         FlyingMachinesFactory flyingMachinesFactory = new FlyingMachinesFactory();
+
         for (String flyingMachines : listOfFlyingMachines) {
             fleet.add(flyingMachinesFactory.create(flyingMachines));
         }
 
         List<Helicopter> helicopters = fleet.getHelicopters();
-        Collections.sort(planes, new FlightRangeComparator());
+        List<Plane> planes = fleet.getPlanes();
+        List<FlyingMashines> flyingMashines = fleet.getFlyingMashines();
+
+        Collections.sort(helicopters, new FlightRangeComparator());
 //        Collections.sort(planes, new CruisingSpeedComparator());
 //        Collections.sort(planes, new FuelConsumptionComparator());
 //        logger.trace(fleet);

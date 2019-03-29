@@ -71,6 +71,12 @@ public class Fleet {
     }
 
     public void add(FlyingMashines flyingMashines) {
+        if(flyingMashines instanceof Plane){
+            planes.add((Plane) flyingMashines);
+        }
+        if(flyingMashines instanceof Helicopter){
+            helicopters.add((Helicopter) flyingMashines);
+        }
         flyingMashines.add(flyingMashines);
     }
 }
