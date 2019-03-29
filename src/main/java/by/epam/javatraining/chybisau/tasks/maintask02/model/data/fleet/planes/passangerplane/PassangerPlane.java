@@ -22,6 +22,7 @@ public class PassangerPlane extends Plane {
     }
 
     public PassangerPlane(String name, double flightRange, double cruisingSpeed, double fuelConsumption, double passangerCapacity) {
+        super(name, flightRange, cruisingSpeed, fuelConsumption);
         this.passangerCapacity=passangerCapacity;
     }
 
