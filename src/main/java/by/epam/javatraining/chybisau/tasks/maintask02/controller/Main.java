@@ -4,18 +4,12 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.Fleet;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopters.Helicopter;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparator;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparator;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.FlightRangeComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.flightrangecomparator.FlightRangeComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.*;
-import by.epam.javatraining.chybisau.tasks.maintask02.view.ConsoleView;
-import by.epam.javatraining.chybisau.tasks.maintask02.view.View;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -38,17 +32,21 @@ public class Main {
         List<String> listOfFlyingMachines = DataReceiver.getData(pathToFlyingMachines);
         FlyingMachinesFactory flyingMachinesFactory = new FlyingMachinesFactory();
 
-        for (String flyingMachines : listOfFlyingMachines) {
-            fleet.add(flyingMachinesFactory.create(flyingMachines));
+        for (String flyingMachinesFromFile : listOfFlyingMachines) {
+            fleet.add(flyingMachinesFactory.create(flyingMachinesFromFile));
         }
 
         List<Helicopter> helicopters = fleet.getHelicopters();
         List<Plane> planes = fleet.getPlanes();
         List<FlyingMashines> flyingMashines = fleet.getFlyingMashines();
-
-        Collections.sort(helicopters, new FlightRangeComparator());
-//        Collections.sort(planes, new CruisingSpeedComparator());
-//        Collections.sort(planes, new FuelConsumptionComparator());
+        PassangerPlane passangerPlane = new PassangerPlane("Boeing737-800", 6900, 850, 2800, 295);
+        flyingMashines.add(passangerPlane);
+        System.out.println(11);
+FlightRangeComparator frc= new FlightRangeComparator();
+        frc.sortFlightRange(flyingMashines);
+//        frc.sortFlightRange(flyingMashines);
+//        System.out.println(flyingMashines);
+//        Collections.sort(helicopters, new FlightRangeComparator());
 //        logger.trace(fleet);
 //        CargoCapacityComparator frc = new CargoCapacityComparator();
 //        frc.sortFlightRange(planes);

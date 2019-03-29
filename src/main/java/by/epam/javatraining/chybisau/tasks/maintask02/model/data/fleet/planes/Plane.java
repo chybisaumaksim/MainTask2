@@ -24,6 +24,7 @@ public class Plane extends FlyingMashines {
     private double cruisingSpeed;
     private double fuelConsumption;
     private static List<Plane> planes = new ArrayList<>();
+    private static List<FlyingMashines> flyingMashine = new ArrayList<>();
 
     public Plane(String name, double flightRange, double cruisingSpeed, double fuelConsumption) {
         this.name = name;
@@ -34,15 +35,11 @@ public class Plane extends FlyingMashines {
 
     public Plane() {
     }
-
-    @Override
-    public void add(FlyingMashines plane) {
-        planes.add((Plane) plane);
+@Override
+    public void add(FlyingMashines flyingMashines) {
+        flyingMashine.add(flyingMashines);
+        planes.add((Plane)flyingMashines);
     }
-
-//    public static Logger getLogger() {
-//        return logger;
-//    }
 
     public String getName() {
         return name;

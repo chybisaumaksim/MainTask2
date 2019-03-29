@@ -1,4 +1,4 @@
-package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator;
+package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.flightrangecomparator;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;

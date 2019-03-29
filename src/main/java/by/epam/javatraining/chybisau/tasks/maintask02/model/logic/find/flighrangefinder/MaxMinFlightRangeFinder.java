@@ -1,7 +1,7 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.flighrangefinder;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.FlightRangeComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.flightrangecomparator.FlightRangeComparator;
 
 import java.util.Collections;
 import java.util.List;

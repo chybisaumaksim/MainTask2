@@ -20,7 +20,7 @@ public class Fleet {
     }
 
     private List<Plane> planes;
-    private List<FlyingMashines> flyingMashines;
+    private List<FlyingMashines> flyingMashine;
     private List<Helicopter> helicopters;
 
     public List<Helicopter> getHelicopters() {
@@ -32,7 +32,7 @@ public class Fleet {
     }
 
     public Fleet() {
-        flyingMashines = new ArrayList<>();
+        flyingMashine = new ArrayList<>();
         helicopters = new ArrayList<>();
         planes = new ArrayList<>();
     }
@@ -45,16 +45,16 @@ public class Fleet {
         return planes;
     }
 
-    public static Logger getLogger() {
-        return logger;
-    }
-
     public List<FlyingMashines> getFlyingMashines() {
-        return flyingMashines;
+        return flyingMashine;
     }
 
     public void setFlyingMashines(List<FlyingMashines> flyingMashines) {
-        this.flyingMashines = flyingMashines;
+        this.flyingMashine = flyingMashines;
+    }
+
+    public static Logger getLogger() {
+        return logger;
     }
 
     public void setPlanes(List<Plane> planes) {
@@ -71,12 +71,13 @@ public class Fleet {
     }
 
     public void add(FlyingMashines flyingMashines) {
+        flyingMashine.add(flyingMashines);
         if(flyingMashines instanceof Plane){
             planes.add((Plane) flyingMashines);
         }
         if(flyingMashines instanceof Helicopter){
             helicopters.add((Helicopter) flyingMashines);
         }
-        flyingMashines.add(flyingMashines);
+
     }
 }
