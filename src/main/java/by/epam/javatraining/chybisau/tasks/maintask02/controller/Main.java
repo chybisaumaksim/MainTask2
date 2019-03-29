@@ -2,20 +2,19 @@ package by.epam.javatraining.chybisau.tasks.maintask02.controller;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.Fleet;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An124;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An225;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Airbus_A320neo;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_300;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_500;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.FlightRangeComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.util.DataReceiver;
+import by.epam.javatraining.chybisau.tasks.maintask02.util.FlyingMachinesFactory;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.PersistException;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.Initializer;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.ConsoleView;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.View;
 import org.apache.log4j.Logger;
+
 import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
@@ -30,32 +29,40 @@ public class Main {
     private static final Logger logger;
 
     static {
-        logger =  Logger.getLogger(Main.class);
+        logger = Logger.getLogger(Main.class);
     }
 
     public static void main(String[] args) throws IOException, PersistException {
 
         String path = "C:\\Program Files\\Java\\Aircompany\\src\\main\\resources\\";
 
+        String pathToFlyingMachines = "C:\\Program Files\\Java\\Aircompany\\src\\main\\resources\\FlyingMachines.txt";
         View view = new ConsoleView();
         Initializer initializer = new Initializer(path);
         Fleet fleet = new Fleet();
+        List<String> listOfFlyingMachines = DataReceiver.getData(pathToFlyingMachines);
+        FlyingMachinesFactory flyingMachinesFactory = new FlyingMachinesFactory();
+
+        for (String flyingMachines : listOfFlyingMachines) {
+            fleet.add(flyingMachinesFactory.create(flyingMachines));
+        }
+
+
 //creating objects
-        PassangerPlane boing737500= new PassangerPlane()
-//        Boing737_500 boing737500 = new Boing737_500();
-        Boing737_300 boing737300 = new Boing737_300();
-        Airbus_A320neo airbus_A320neo = new Airbus_A320neo();
-        Airbus_A320neo airbus_A320neo2 = new Airbus_A320neo(6860.0, 840.0, 2750.0, 300.0);
-        An124 an124 = new An124();
-        An225 an225 = new An225(15_400, 800, 15_900, 250_000);
+        PassangerPlane boeing737500 = new PassangerPlane("Boeing737500", 8400.0, 850.0, 2800.0, 240.0);
+        PassangerPlane boeing737300 = new PassangerPlane();
+        PassangerPlane airbus_A320neo = new PassangerPlane();
+        PassangerPlane airbus_A320neo2 = new PassangerPlane("Airbus_A320neo", 26860.0, 840.0, 2750.0, 300.0);
+        CargoPlane an124 = new CargoPlane();
+        CargoPlane an225 = new CargoPlane(15_400.0, 800.0, 15_900.0, 250_000.0);
 //initializing objects
-        boing737300 = (Boing737_300) initializer.initializePassangerPlane(boing737300);
-        boing737500 = (Boing737_500) initializer.initializePassangerPlane(boing737500);
-        airbus_A320neo = (Airbus_A320neo) initializer.initializePassangerPlane(airbus_A320neo);
-        an124 = (An124) initializer.initializeCargoPlane(an124);
+        boeing737300 = initializer.initializePassangerPlane(boeing737300);
+        boeing737500 = initializer.initializePassangerPlane(boeing737500);
+        airbus_A320neo = initializer.initializePassangerPlane(airbus_A320neo);
+        an124 = initializer.initializeCargoPlane(an124);
 //adding objects
-        fleet.add(boing737500);
-        fleet.add(boing737300);
+        fleet.add(boeing737500);
+        fleet.add(boeing737300);
         fleet.add(airbus_A320neo);
         fleet.add(an124);
         fleet.add(airbus_A320neo2);

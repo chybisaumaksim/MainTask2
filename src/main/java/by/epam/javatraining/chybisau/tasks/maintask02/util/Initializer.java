@@ -1,12 +1,13 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.util;
 
-import by.epam.javatraining.chybisau.tasks.maintask02.controller.Main;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.StringTokenizer;
 
 /**
  * Created by Maksim Chybisau on 22/03/19.
@@ -14,11 +15,16 @@ import java.util.List;
  * @version 0.0.1
  */
 public class Initializer {
+
+    private static Initializer instance;
+    private Creator creator = Creator.getInstance();
+    //    private RandomEssenceCreator randomEssenceCreator = new RandomEssenceCreator();
     private static final Logger logger;
     private static List<String> planeList;
     private String PATH;
+
     static {
-        logger =  Logger.getRootLogger();
+        logger = Logger.getRootLogger();
     }
 
     public static List<String> getPlaneList() {
@@ -31,6 +37,16 @@ public class Initializer {
 
     public Initializer(String path) throws IOException, PersistException {
         this.PATH = path;
+    }
+
+    public static Initializer getInstance() throws IOException, PersistException {
+        if (instance == null) {
+            instance = new Initializer();
+        }
+        return instance;
+    }
+
+    public Initializer() throws IOException, PersistException {
     }
 
     public PassangerPlane initializePassangerPlane(PassangerPlane passangerPlane) throws IOException, PersistException {
@@ -74,4 +90,16 @@ public class Initializer {
     public double getCargoCapacity() {
         return Double.parseDouble(String.valueOf(planeList.get(3)));
     }
+
+    public void initializeFlyingMachine(PassangerPlane passangerPlane, String datesOfFlyingMachine) {
+        StringTokenizer st = new StringTokenizer(datesOfFlyingMachine);
+        while (st.hasMoreTokens()) {
+            passangerPlane.setName(st.nextToken());
+            passangerPlane.setFlightRange(Double.parseDouble(st.nextToken()));
+            passangerPlane.setCruisingSpeed(Double.parseDouble(st.nextToken()));
+            passangerPlane.setFuelConsumption(Double.parseDouble(st.nextToken()));
+            passangerPlane.setPassangerCapacity(Double.parseDouble(st.nextToken()));
+        }
+    }
 }
+

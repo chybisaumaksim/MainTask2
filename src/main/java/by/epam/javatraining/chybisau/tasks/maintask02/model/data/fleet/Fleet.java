@@ -17,6 +17,7 @@ public class Fleet {
         logger =  Logger.getRootLogger();
     }
     private List<Plane> planes;
+    private List<FlyingMashines> flyingMashines;
 
     public Fleet() {
         planes = new ArrayList<>();
@@ -30,6 +31,18 @@ public class Fleet {
         return planes;
     }
 
+    public static Logger getLogger() {
+        return logger;
+    }
+
+    public List<FlyingMashines> getFlyingMashines() {
+        return flyingMashines;
+    }
+
+    public void setFlyingMashines(List<FlyingMashines> flyingMashines) {
+        this.flyingMashines = flyingMashines;
+    }
+
     public void setPlanes(List<Plane> planes) {
         this.planes = planes;
     }
@@ -41,5 +54,9 @@ public class Fleet {
             sb.append(plane).append("\n");
         }
         return sb.toString();
+    }
+
+    public void add(FlyingMashines flyingMashines) {
+        flyingMashines.add(flyingMashines);
     }
 }

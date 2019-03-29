@@ -2,12 +2,7 @@ package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruising
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An124;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.entities.An225;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Airbus_A320neo;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_300;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.entities.Boing737_500;
-import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cargocapacitycomparator.CargoCapacityComparator;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -23,10 +18,12 @@ import static org.testng.Assert.*;
  * 26.03.2019
  */
 public class CruisingSpeedComparatorTest {
-    Boing737_500 boing737500 = new Boing737_500(8400, 850, 2800, 240);
-    Boing737_300 boing737300 = new Boing737_300(4400, 910, 2600, 277);
-    Airbus_A320neo airbus_A320neo = new Airbus_A320neo(6850, 830, 2700, 330);
-    An124 an124 = new An124(5425, 853, 12_600, 120_000);
+    PassangerPlane boing737500 = new PassangerPlane(8400, 850, 2800, 240);
+    PassangerPlane boing737300 = new PassangerPlane(4400, 910, 2600, 277);
+    PassangerPlane airbus_A320neo = new PassangerPlane(6850, 830, 2700, 330);
+    CargoPlane  an124 = new CargoPlane(5425, 853, 12_600, 120_000);
+    CargoPlane an225 = new CargoPlane(15_400, 800, 15_900, 250_000);
+
 
     @Test
     public void testCompareOne() {

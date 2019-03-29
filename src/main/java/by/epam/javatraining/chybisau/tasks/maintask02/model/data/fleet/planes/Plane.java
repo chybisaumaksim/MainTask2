@@ -1,5 +1,6 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes;
 import by.epam.javatraining.chybisau.tasks.maintask02.controller.Main;
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 import org.apache.log4j.Logger;
 /**
  * Created by Maksim Chybisau on 22/03/19.
@@ -7,25 +8,38 @@ import org.apache.log4j.Logger;
  * @version 0.0.1
  */
 
-public class Plane {
+public class Plane extends FlyingMashines {
     private static final Logger logger;
 
     static {
         logger =  Logger.getLogger(Main.class);
     }
 
-
+    private String name;
     private double flightRange;
     private double cruisingSpeed;
     private double fuelConsumption;
 
-    public Plane() {
-    }
-
-    public Plane(double flightRange, double cruisingSpeed, double fuelConsumption) {
+    public Plane(String name, double flightRange, double cruisingSpeed, double fuelConsumption) {
+        this.name = name;
         this.flightRange = flightRange;
         this.cruisingSpeed = cruisingSpeed;
         this.fuelConsumption = fuelConsumption;
+    }
+
+    public Plane() {
+    }
+
+    public static Logger getLogger() {
+        return logger;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getFlightRange() {
@@ -56,16 +70,22 @@ public class Plane {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Plane)) return false;
+
         Plane plane = (Plane) o;
-        return Double.compare(plane.getFlightRange(), getFlightRange()) == 0 && Double.compare(plane.getCruisingSpeed(), getCruisingSpeed()) == 0 && Double.compare(plane.getFuelConsumption(), getFuelConsumption()) == 0;
+
+        if (Double.compare(plane.getFlightRange(), getFlightRange()) != 0) return false;
+        if (Double.compare(plane.getCruisingSpeed(), getCruisingSpeed()) != 0) return false;
+        if (Double.compare(plane.getFuelConsumption(), getFuelConsumption()) != 0) return false;
+        return getName().equals(plane.getName());
     }
 
     @Override
     public int hashCode() {
         int result;
         long temp;
+        result = getName().hashCode();
         temp = Double.doubleToLongBits(getFlightRange());
-        result = (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(getCruisingSpeed());
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         temp = Double.doubleToLongBits(getFuelConsumption());
@@ -75,7 +95,7 @@ public class Plane {
 
     @Override
     public String toString() {
-        return "flightRange=" + flightRange + ", cruisingSpeed=" + cruisingSpeed + ", fuelConsumption=" + fuelConsumption;
+        return "Plane{" + "name='" + name + '\'' + ", flightRange=" + flightRange + ", cruisingSpeed=" + cruisingSpeed + ", fuelConsumption=" + fuelConsumption + '}';
     }
 }
 

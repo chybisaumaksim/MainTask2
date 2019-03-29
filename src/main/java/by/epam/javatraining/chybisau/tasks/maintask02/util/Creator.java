@@ -12,9 +12,18 @@ import java.io.IOException;
  * @version 0.0.1
  */
 public class Creator {
+    private static Creator instance;
 
     public Creator() throws IOException, PersistException {
     }
+
+    public static Creator getInstance() throws IOException, PersistException {
+        if (instance == null) {
+            instance = new Creator();
+        }
+        return instance;
+    }
+
 
     public PassangerPlane createPassengerPlane() throws IOException, PersistException {
         return new PassangerPlane();

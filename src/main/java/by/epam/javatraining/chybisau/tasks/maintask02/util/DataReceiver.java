@@ -18,7 +18,7 @@ public class DataReceiver {
         logger = Logger.getRootLogger();
     }
 
-    static List<String> getData(String path) throws PersistException {
+    public static List<String> getData(String path) throws PersistException {
         BufferedReader is = null;
         String i;
         List<String> list = new ArrayList<>();
