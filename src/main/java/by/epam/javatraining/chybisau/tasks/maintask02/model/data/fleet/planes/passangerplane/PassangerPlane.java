@@ -15,12 +15,10 @@ public class PassangerPlane extends Plane {
     private double passangerCapacity;
 
     public PassangerPlane() {
-        this.passangerCapacity = passangerCapacity;
     }
 
     public PassangerPlane(String name, double flightRange, double cruisingSpeed, double fuelConsumption) {
         super(name, flightRange, cruisingSpeed, fuelConsumption);
-        this.passangerCapacity = passangerCapacity;
     }
 
     public PassangerPlane(String name, double flightRange, double cruisingSpeed, double fuelConsumption, double passangerCapacity) {
@@ -33,9 +31,6 @@ public class PassangerPlane extends Plane {
 
     public void setPassangerCapacity(double passangerCapacity) {
         this.passangerCapacity = passangerCapacity;
-    }
-
-    public void add() {
     }
 
     @Override

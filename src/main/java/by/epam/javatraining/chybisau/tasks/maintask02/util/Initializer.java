@@ -19,7 +19,6 @@ public class Initializer {
 
     private static Initializer instance;
     private Creator creator = Creator.getInstance();
-    //    private RandomEssenceCreator randomEssenceCreator = new RandomEssenceCreator();
     private static final Logger logger;
     private static List<String> planeList;
     private String PATH;

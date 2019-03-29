@@ -21,6 +21,7 @@ public class Fleet {
 
     private List<Plane> planes;
     private List<FlyingMashines> flyingMashines;
+    private List<Helicopter> helicopters;
 
     public List<Helicopter> getHelicopters() {
         return helicopters;
@@ -29,8 +30,6 @@ public class Fleet {
     public void setHelicopters(List<Helicopter> helicopters) {
         this.helicopters = helicopters;
     }
-
-    private List<Helicopter> helicopters;
 
     public Fleet() {
         flyingMashines = new ArrayList<>();

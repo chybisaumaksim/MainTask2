@@ -8,10 +8,7 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.pa
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruisingspeedcomparator.CruisingSpeedComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.maxspeadcomparator.FlightRangeComparator;
-import by.epam.javatraining.chybisau.tasks.maintask02.util.DataReceiver;
-import by.epam.javatraining.chybisau.tasks.maintask02.util.FlyingMachinesFactory;
-import by.epam.javatraining.chybisau.tasks.maintask02.util.PersistException;
-import by.epam.javatraining.chybisau.tasks.maintask02.util.Initializer;
+import by.epam.javatraining.chybisau.tasks.maintask02.util.*;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.ConsoleView;
 import by.epam.javatraining.chybisau.tasks.maintask02.view.View;
 import org.apache.log4j.Logger;
@@ -42,10 +39,8 @@ public class Main {
         for (String flyingMachines : listOfFlyingMachines) {
             fleet.add(flyingMachinesFactory.create(flyingMachines));
         }
-        System.out.println(111);
-        List<Plane> planes = fleet.getPlanes();
+
         List<Helicopter> helicopters = fleet.getHelicopters();
-//sorting of objects
         Collections.sort(planes, new FlightRangeComparator());
 //        Collections.sort(planes, new CruisingSpeedComparator());
 //        Collections.sort(planes, new FuelConsumptionComparator());
