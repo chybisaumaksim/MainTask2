@@ -21,7 +21,6 @@ public class CargoPlane extends Plane {
     public CargoPlane(String name, double flightRange, double cruisingSpeed, double fuelConsumption) {
         super(name, flightRange, cruisingSpeed, fuelConsumption);
         this.cargoCapacity = cargoCapacity;
-
     }
 
     public CargoPlane(String name, double flightRange, double cruisingSpeed, double fuelConsumption, double cargoCapacity) {

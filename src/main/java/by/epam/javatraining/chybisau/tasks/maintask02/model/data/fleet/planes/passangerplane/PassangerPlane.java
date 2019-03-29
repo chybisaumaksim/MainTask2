@@ -1,9 +1,6 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane;
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
-import by.epam.javatraining.chybisau.tasks.maintask02.util.PersistException;
-
-import java.io.IOException;
 
 /**
  * Created by Maksim Chybisau on 22/03/19.

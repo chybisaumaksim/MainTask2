@@ -7,5 +7,5 @@ passangerPlane, Boeing737-900, 5800, 855, 2700, 240
 passangerPlane, Boeing737-500, 8400, 850, 2800, 240
 passangerPlane, Airbus_A320neo, 6850, 830, 2700, 330
 cargoPlane, An124, 5425, 853, 12600, 120000
-
+Airbus_A320neo, 6850, 830, 2700, 330
 

@@ -27,9 +27,10 @@ public class FlyingMachinesFactory {
 
     public FlyingMashines create(String datesOfFlyingMachine) throws IOException, PersistException {
         FlyingMashines flyingMashine = null;
-        StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
-        String planes = st.nextToken();
-            switch (planes) {
+        try {
+            StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
+            String datasOfFlyingMashine = st.nextToken();
+            switch (datasOfFlyingMashine) {
                 case PASSANGERPLANE:
                     flyingMashine = creator.createPassengerPlane();
                     initializer.initializeFlyingMachine((PassangerPlane) flyingMashine, datesOfFlyingMachine);
@@ -43,6 +44,10 @@ public class FlyingMachinesFactory {
                     initializer.initializeFlyingMachine((Helicopter) flyingMashine, datesOfFlyingMachine);
                     break;
             }
+
+        } catch (PersistException e) {
+            throw new PersistException("Error in creation flying machines", e);
+        }
         return flyingMashine;
     }
 }

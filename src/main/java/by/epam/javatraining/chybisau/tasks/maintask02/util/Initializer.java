@@ -6,6 +6,7 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.pa
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.StringTokenizer;
 
 /**
@@ -16,7 +17,6 @@ import java.util.StringTokenizer;
 public class Initializer {
 
     private static Initializer instance;
-//    private Creator creator = Creator.getInstance();
     private static final Logger logger;
 
     static {
@@ -30,7 +30,7 @@ public class Initializer {
         return instance;
     }
 
-    public Initializer() throws IOException, PersistException {
+    public Initializer() {
     }
 
     public void initializeFlyingMachine(PassangerPlane passangerPlane, String datesOfFlyingMachine) {
@@ -43,30 +43,40 @@ public class Initializer {
             passangerPlane.setFuelConsumption(Double.parseDouble(st.nextToken()));
             passangerPlane.setPassangerCapacity(Double.parseDouble(st.nextToken()));
         }
+
+
     }
 
-    public void initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) {
+    public void initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
-        while (st.hasMoreTokens()) {
-            st.nextToken();
-            cargoPlane.setName(st.nextToken());
-            cargoPlane.setFlightRange(Double.parseDouble(st.nextToken()));
-            cargoPlane.setCruisingSpeed(Double.parseDouble(st.nextToken()));
-            cargoPlane.setFuelConsumption(Double.parseDouble(st.nextToken()));
-            cargoPlane.setCargoCapacity(Double.parseDouble(st.nextToken()));
+        if (st.hasMoreElements()) {
+            while (st.hasMoreTokens()) {
+                st.nextToken();
+                cargoPlane.setName(st.nextToken());
+                cargoPlane.setFlightRange(Double.parseDouble(st.nextToken()));
+                cargoPlane.setCruisingSpeed(Double.parseDouble(st.nextToken()));
+                cargoPlane.setFuelConsumption(Double.parseDouble(st.nextToken()));
+                cargoPlane.setCargoCapacity(Double.parseDouble(st.nextToken()));
+            }
+        } else {
+            throw new PersistException("Error in getting dates from string");
         }
     }
 
-    public void initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) {
+    public void initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
-        while (st.hasMoreTokens()) {
-            st.nextToken();
-            helicopter.setName(st.nextToken());
-            helicopter.setFlightRange(Double.parseDouble(st.nextToken()));
-            helicopter.setCruisingSpeed(Double.parseDouble(st.nextToken()));
-            helicopter.setFuelConsumption(Double.parseDouble(st.nextToken()));
-            helicopter.setNeedOfRunway(Boolean.getBoolean(st.nextToken()));
-        }
+//       try {
+            while (st.hasMoreTokens()) {
+                st.nextToken();
+                helicopter.setName(st.nextToken());
+                helicopter.setFlightRange(Double.parseDouble(st.nextToken()));
+                helicopter.setCruisingSpeed(Double.parseDouble(st.nextToken()));
+                helicopter.setFuelConsumption(Double.parseDouble(st.nextToken()));
+                helicopter.setNeedOfRunway(Boolean.getBoolean(st.nextToken()));
+            }
+//        } catch (ParseException e){
+//            throw new PersistException("Error in getting dates from string");
+//        }
     }
 }
 

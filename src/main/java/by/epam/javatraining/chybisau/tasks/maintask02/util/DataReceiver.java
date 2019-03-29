@@ -21,25 +21,25 @@ public class DataReceiver {
     public static List<String> getData(String path) throws PersistException {
         BufferedReader is = null;
         String i;
-        List<String> list = new ArrayList<>();
+        List<String> stringData = new ArrayList<>();
         try {
             is = new BufferedReader(new FileReader(path));
-            while ((i = is.readLine()) != null && i.length()>1) {
-                list.add(i);
+            while ((i = is.readLine()) != null && i.length() > 1) {
+                stringData.add(i);
             }
         } catch (FileNotFoundException e) {
-            throw new PersistException("Файл не найден.", e);
+            throw new PersistException("File not found", e);
         } catch (IOException e) {
-            throw new PersistException("Ошибка при работе с потоком fileInputStream", e);
+            throw new PersistException("Error while working with fileInputStream", e);
         } finally {
             try {
                 if (is != null) {
                     is.close();
                 }
             } catch (IOException e) {
-                System.err.println("Ошибка закрытия потока InputStream" + e.getMessage());
+                System.err.println("Error in closing InputStream" + e.getMessage());
             }
         }
-        return list;
+        return stringData;
     }
 }
