@@ -23,7 +23,7 @@ public class Initializer {
         logger = Logger.getRootLogger();
     }
 
-    public static Initializer getInstance() throws IOException, PersistException {
+    public static Initializer getInstance()  {
         if (instance == null) {
             instance = new Initializer();
         }
@@ -43,40 +43,30 @@ public class Initializer {
             passangerPlane.setFuelConsumption(Double.parseDouble(st.nextToken()));
             passangerPlane.setPassangerCapacity(Double.parseDouble(st.nextToken()));
         }
-
-
     }
 
-    public void initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) throws PersistException {
+    public void initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
-        if (st.hasMoreElements()) {
-            while (st.hasMoreTokens()) {
-                st.nextToken();
-                cargoPlane.setName(st.nextToken());
-                cargoPlane.setFlightRange(Double.parseDouble(st.nextToken()));
-                cargoPlane.setCruisingSpeed(Double.parseDouble(st.nextToken()));
-                cargoPlane.setFuelConsumption(Double.parseDouble(st.nextToken()));
-                cargoPlane.setCargoCapacity(Double.parseDouble(st.nextToken()));
-            }
-        } else {
-            throw new PersistException("Error in getting dates from string");
+        while (st.hasMoreTokens()) {
+            st.nextToken();
+            cargoPlane.setName(st.nextToken());
+            cargoPlane.setFlightRange(Double.parseDouble(st.nextToken()));
+            cargoPlane.setCruisingSpeed(Double.parseDouble(st.nextToken()));
+            cargoPlane.setFuelConsumption(Double.parseDouble(st.nextToken()));
+            cargoPlane.setCargoCapacity(Double.parseDouble(st.nextToken()));
         }
     }
 
-    public void initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) throws PersistException {
+    public void initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
-//       try {
-            while (st.hasMoreTokens()) {
-                st.nextToken();
-                helicopter.setName(st.nextToken());
-                helicopter.setFlightRange(Double.parseDouble(st.nextToken()));
-                helicopter.setCruisingSpeed(Double.parseDouble(st.nextToken()));
-                helicopter.setFuelConsumption(Double.parseDouble(st.nextToken()));
-                helicopter.setNeedOfRunway(Boolean.getBoolean(st.nextToken()));
-            }
-//        } catch (ParseException e){
-//            throw new PersistException("Error in getting dates from string");
-//        }
+        while (st.hasMoreTokens()) {
+            st.nextToken();
+            helicopter.setName(st.nextToken());
+            helicopter.setFlightRange(Double.parseDouble(st.nextToken()));
+            helicopter.setCruisingSpeed(Double.parseDouble(st.nextToken()));
+            helicopter.setFuelConsumption(Double.parseDouble(st.nextToken()));
+            helicopter.setNeedOfRunway(Boolean.getBoolean(st.nextToken()));
+        }
     }
 }
 

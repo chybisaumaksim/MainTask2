@@ -11,6 +11,8 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.flightran
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator.FuelConsumptionComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.passangercapacitycomparator.PassangerCapacityComparator;
 import by.epam.javatraining.chybisau.tasks.maintask02.util.*;
+import by.epam.javatraining.chybisau.tasks.maintask02.view.ConsoleView;
+import by.epam.javatraining.chybisau.tasks.maintask02.view.View;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -45,6 +47,7 @@ public class Main {
 
         PassangerPlane passangerPlane = new PassangerPlane("Boeing737-800", 6900, 850, 2800, 295);
         flyingMashines.add(passangerPlane);
+View view = new ConsoleView();
 
         FlightRangeComparator frc = new FlightRangeComparator();
         CargoCapacityComparator ccc = new CargoCapacityComparator();
@@ -52,7 +55,8 @@ public class Main {
         FuelConsumptionComparator fcc = new FuelConsumptionComparator();
         PassangerCapacityComparator pcc = new PassangerCapacityComparator();
 //        frc.sortFlightRangeOfFlyingMashines(flyingMashines);
-//        frc.sortFlightRangeOfFlyingMashines(flyingMashines);
+        frc.sortFlightRangeOfFlyingMashines(flyingMashines);
+        view.print(csc.getAscendingOrderOfCruisingSpeed(flyingMashines));
 //
 //        frc.sortFlightRange(flyingMashines);
 //        logger.trace(fleet);

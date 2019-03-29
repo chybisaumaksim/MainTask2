@@ -46,7 +46,7 @@ public class FlyingMachinesFactory {
             }
 
         } catch (PersistException e) {
-            throw new PersistException("Error in creation flying machines", e);
+            throw new PersistException("Error in creation flying machines", e.getMessage());
         }
         return flyingMashine;
     }

@@ -15,10 +15,11 @@ public class PersistException extends Exception {
         super(cause);
     }
 
-    public PersistException() {
+    public PersistException(String message) {
+        super(message);
     }
 
-    public PersistException(String message) {
+    public PersistException(String cause, String message) {
         super(message);
     }
 }

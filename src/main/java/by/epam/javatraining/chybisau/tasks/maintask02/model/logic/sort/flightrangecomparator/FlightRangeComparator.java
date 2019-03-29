@@ -24,30 +24,8 @@ public class FlightRangeComparator implements Comparator<FlyingMashines> {
         return result;
     }
 
-    public void sortFlightRangeOfFlyingMashines(List<FlyingMashines> flyingMashines) {
+    public List<FlyingMashines> sortFlightRangeOfFlyingMashines(List<FlyingMashines> flyingMashines) {
         flyingMashines.sort(new FlightRangeComparator());
+        return flyingMashines;
     }
-
-//    public void sortFlightRangeOfPlanes(List<Plane> planes) {
-//        planes.sort(new FlightRangeComparator());
-//    }
-//
-//    public void sortFlightRangeOfHelicopters(List<Helicopter> helicopter) {
-//        helicopter.sort(new FlightRangeComparator());
-//    }
-//
-//    public void sortFlightRangeOfPassangerPlanes(List<PassangerPlane> passangerPlanes) {
-//        passangerPlanes.sort(new FlightRangeComparator());
-//    }
-//
-//    public void sortFlightRangeOfCargoPlames(List<PassangerPlane> cargoPlanes) {
-//        cargoPlanes.sort(new FlightRangeComparator());
-//    }
-
-//    public void sortFlightRangeOfFlyingMashines(List<FlyingMashines> planes) {
-//        planes.sort(new FlightRangeComparator());
-//    }
-
-//    public void sortFlightRangeOfFlyingMashines(List<Plane> planes) {
-//    }
 }
