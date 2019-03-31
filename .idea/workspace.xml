@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a7e4a905-b40a-4018-860c-e1337eabc4ad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/Creator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/FlyingMachinesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/FlyingMachinesFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/Initializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinPassangerCapacityFinderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cruisingspeedcomparator/CruisingSpeedComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/flightrangecomparator/FlightRangeComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/flightrangecomparator/FlightRangeComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/passangercapacitycomparator/PassangerCapacityComparatorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,6 +66,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/controller/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CargoCapacityComparatorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/cargocapacitycomparator/CargoCapacityComparatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,13 +115,13 @@
       <file leaf-file-name="DataReceiver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/DataReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="-44">
               <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="27" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlyingMachinesFactory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FlyingMachinesFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/FlyingMachinesFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
@@ -136,8 +137,8 @@
       <file leaf-file-name="Initializer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/Initializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+            <state relative-caret-position="142">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,18 +151,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="589">
               <caret line="49" column="5" lean-forward="true" selection-start-line="48" selection-start-column="35" selection-end-line="49" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FuelConsumptionComparator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/sort/fuelconsumptioncomparator/FuelConsumptionComparator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -402,24 +391,6 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
               <item name="sort" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="maintask02" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Aircompany" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="maintask02" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Aircompany" type="b2602c69:ProjectViewProjectNode" />
@@ -982,7 +953,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553895219698</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="17 commit&#10;Tests&#10;improvements">
+      <created>1554056911237</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1554056911237</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1033,7 +1011,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32969153" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26792964" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26792964" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32882273" />
       <window_info id="Capture Tool" order="5" />
@@ -1093,7 +1071,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2 commit.&#10;Entities&#10;resources" />
     <MESSAGE value="2 commit.&#10;Entities&#10;Hierarchy&#10;PersistExeption&#10;resources&#10;resources" />
     <MESSAGE value="3 commit.&#10;resources&#10;..." />
     <MESSAGE value="5 commit comparators" />
@@ -1118,7 +1095,8 @@
     <MESSAGE value="15 commit&#10;main" />
     <MESSAGE value="15 commit&#10;Persist Exception" />
     <MESSAGE value="16 commit&#10;work with Exeptions done" />
-    <option name="LAST_COMMIT_MESSAGE" value="16 commit&#10;work with Exeptions done" />
+    <MESSAGE value="17 commit&#10;Tests&#10;improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="17 commit&#10;Tests&#10;improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1313,16 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/controller/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/epam/javatraining/chybisau/tasks/maintask02/model/logic/find/capacityfinder/MaxMinCargoCapacityFinderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -1433,10 +1401,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/DataReceiver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/FlyingMachinesFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="418">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#FlyingMachinesFactory#0" />
+            <element signature="method#FlyingMachinesFactory#0;class#FlyingMachinesFactory#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1451,23 +1423,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/DataReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/Initializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="37" column="40" lean-forward="true" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+        <state relative-caret-position="142">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/util/FlyingMachinesFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/epam/javatraining/chybisau/tasks/maintask02/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        <state relative-caret-position="242">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
-            <element signature="docComment;class#FlyingMachinesFactory#0" />
-            <element signature="method#FlyingMachinesFactory#0;class#FlyingMachinesFactory#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
