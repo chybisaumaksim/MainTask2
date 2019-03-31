@@ -25,8 +25,7 @@ public class FlyingMachinesFactory {
         FlyingMashines flyingMashine = null;
         try {
             StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
-            String datasOfFlyingMashine = st.nextToken();
-            switch (datasOfFlyingMashine) {
+            switch (st.nextToken()) {
                 case "passangerPlane":
                     flyingMashine = initializer.initializeFlyingMachine(creator.createPassengerPlane(), datesOfFlyingMachine);
                     break;

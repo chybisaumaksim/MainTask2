@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
  *
  * @version 0.0.1
  */
-public class Initializer {
+class Initializer {
 
     private static Initializer instance;
     private static final Logger logger;
@@ -22,17 +22,17 @@ public class Initializer {
         logger = Logger.getRootLogger();
     }
 
-    public static Initializer getInstance() {
+    static Initializer getInstance() {
         if (instance == null) {
             instance = new Initializer();
         }
         return instance;
     }
 
-    public Initializer() {
+    private Initializer() {
     }
 
-    public PassangerPlane initializeFlyingMachine(PassangerPlane passangerPlane, String datesOfFlyingMachine) throws PersistException {
+    PassangerPlane initializeFlyingMachine(PassangerPlane passangerPlane, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
             while (st.hasMoreTokens()) {
@@ -49,7 +49,7 @@ public class Initializer {
         return passangerPlane;
     }
 
-    public CargoPlane initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) throws PersistException {
+    CargoPlane initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
             while (st.hasMoreTokens()) {
@@ -66,7 +66,7 @@ public class Initializer {
         return cargoPlane;
     }
 
-    public Helicopter initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) throws PersistException {
+    Helicopter initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
             while (st.hasMoreTokens()) {

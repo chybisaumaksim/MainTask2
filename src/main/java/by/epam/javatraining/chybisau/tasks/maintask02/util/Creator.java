@@ -15,29 +15,29 @@ import java.io.IOException;
 public class Creator {
     private static Creator instance;
 
-    public Creator()  {
+    private Creator()  {
     }
 
-    public static Creator getInstance()  {
+    static Creator getInstance()  {
         if (instance == null) {
             instance = new Creator();
         }
         return instance;
     }
 
-    public PassangerPlane createPassengerPlane()  {
+    PassangerPlane createPassengerPlane()  {
         return new PassangerPlane();
     }
 
-    public CargoPlane createCargoPlane() throws IOException, PersistException {
+    CargoPlane createCargoPlane() throws IOException, PersistException {
         return new CargoPlane();
+    }
+
+    Helicopter createHelicopter() {
+        return new Helicopter();
     }
 
     public Plane createPlane() {
         return new Plane();
-    }
-
-    public Helicopter createHelicopter() {
-        return new Helicopter();
     }
 }

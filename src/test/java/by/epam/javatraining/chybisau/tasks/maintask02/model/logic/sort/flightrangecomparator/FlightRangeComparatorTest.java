@@ -1,5 +1,6 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.flightrangecomparator;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
@@ -22,7 +23,6 @@ public class FlightRangeComparatorTest {
     PassangerPlane boing737300 = new PassangerPlane("Boing737300",4400, 910, 2600, 277);
     PassangerPlane airbus_A320neo = new PassangerPlane("Airbus_A320neo",6850, 830, 2700, 330);
     CargoPlane  an124 = new CargoPlane("An124", 5425, 853, 12_600, 120_000);
-    CargoPlane an225 = new CargoPlane("An225", 15_400, 800, 15_900, 250_000);
 
     @Test
     public void testCompareOne() {
@@ -42,8 +42,17 @@ public class FlightRangeComparatorTest {
 
     @Test
     public void testCompareTwo() {
-        double exp = 4000;
-        assertEquals(exp, new FlightRangeComparator().compare(boing737500, boing737300), 0.000);
+        List<FlyingMashines> flyingMashines = new ArrayList<>();
+        flyingMashines.add(boing737500);
+        flyingMashines.add(boing737300);
+        flyingMashines.add(airbus_A320neo);
+        flyingMashines.add(an124);
+        FlightRangeComparator frc=new FlightRangeComparator();
+        List<Plane> expected = new ArrayList<>();
+        expected.add(boing737300);
+        expected.add(an124);
+        expected.add(airbus_A320neo);
+        expected.add(boing737500);
+        assertEquals(expected, frc.sortFlightRangeOfFlyingMashines(flyingMashines));
     }
-
 }

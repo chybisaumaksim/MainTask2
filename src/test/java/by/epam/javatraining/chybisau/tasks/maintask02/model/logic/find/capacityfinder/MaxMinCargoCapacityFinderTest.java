@@ -16,12 +16,14 @@ import static org.testng.Assert.*;
 public class MaxMinCargoCapacityFinderTest {
     CargoPlane  an124 = new CargoPlane("An124", 5425, 853, 12_600, 120_000);
     CargoPlane an225 = new CargoPlane("An225", 15_400, 800, 15_900, 250_000);
+    CargoPlane an127 = new CargoPlane("An127", 8_800, 760, 7_200, 140_000);
 
     @Test
     public void testGetMaxCargoCapacityPlane() {
         List<CargoPlane> planes = new ArrayList<>();
         planes.add(an124);
         planes.add(an225);
+        planes.add(an127);
         assertEquals(an225, new MaxMinCargoCapacityFinder().getMaxCargoCapacityPlane(planes));
     }
 
@@ -30,6 +32,7 @@ public class MaxMinCargoCapacityFinderTest {
         List<CargoPlane> planes = new ArrayList<>();
         planes.add(an124);
         planes.add(an225);
+        planes.add(an127);
         assertEquals(an124, new MaxMinCargoCapacityFinder().getMinCargoCapacityPlane(planes));
     }
 }

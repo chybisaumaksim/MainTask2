@@ -26,8 +26,8 @@ public class PassangerCapacityComparator implements Comparator<PassangerPlane> {
         return result;
     }
 
-    public List<PassangerPlane> sortFuelConsumptionOfPlanes(List<PassangerPlane> planes) {
-        planes.sort(new FlightRangeComparator());
+    public List<PassangerPlane> sortPassangerCapacityOfPlanes(List<PassangerPlane> planes) {
+        planes.sort(new PassangerCapacityComparator());
         return planes;
     }
 
