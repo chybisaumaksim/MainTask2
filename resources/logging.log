@@ -1,0 +1,22 @@
+2019-03-31 22:53:12 DEBUG root:22 - Getting dates from file
+2019-03-31 22:53:12 DEBUG Creator:35 - Creating passanger plane
+2019-03-31 22:53:12 DEBUG root:38 - Initializing passanger plane
+2019-03-31 22:53:12 DEBUG Creator:40 - Creating cargo plane
+2019-03-31 22:53:12 DEBUG root:56 - Initializing cargo plane
+2019-03-31 22:53:12 DEBUG Creator:45 - Creating helicopter
+2019-03-31 22:53:12 DEBUG root:74 - Initializing helicopter
+2019-03-31 22:53:12 DEBUG Creator:35 - Creating passanger plane
+2019-03-31 22:53:12 DEBUG root:38 - Initializing passanger plane
+2019-03-31 22:53:12 DEBUG Creator:35 - Creating passanger plane
+2019-03-31 22:53:12 DEBUG root:38 - Initializing passanger plane
+2019-03-31 22:53:12 DEBUG Creator:35 - Creating passanger plane
+2019-03-31 22:53:12 DEBUG root:38 - Initializing passanger plane
+2019-03-31 22:53:12 DEBUG Creator:35 - Creating passanger plane
+2019-03-31 22:53:12 DEBUG root:38 - Initializing passanger plane
+2019-03-31 22:53:12 DEBUG Creator:35 - Creating passanger plane
+2019-03-31 22:53:12 DEBUG root:38 - Initializing passanger plane
+2019-03-31 22:53:12 DEBUG Creator:40 - Creating cargo plane
+2019-03-31 22:53:12 DEBUG root:56 - Initializing cargo plane
+2019-03-31 22:53:12 DEBUG Main:38 - Logic part
+
+
