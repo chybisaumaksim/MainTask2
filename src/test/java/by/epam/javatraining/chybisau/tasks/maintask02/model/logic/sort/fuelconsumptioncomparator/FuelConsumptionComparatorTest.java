@@ -1,5 +1,6 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.fuelconsumptioncomparator;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
@@ -25,13 +26,13 @@ public class FuelConsumptionComparatorTest {
 
     @Test
     public void testCompareOne() {
-        List<Plane> planes = new ArrayList<>();
+        List<FlyingMashines> planes = new ArrayList<>();
         planes.add(boing737500);
         planes.add(boing737300);
         planes.add(airbus_A320neo);
         planes.add(an124);
         Collections.sort(planes, new FuelConsumptionComparator());
-        List<Plane> expected = new ArrayList<>();
+        List<FlyingMashines> expected = new ArrayList<>();
         expected.add(boing737300);
         expected.add(airbus_A320neo);
         expected.add(boing737500);
@@ -41,11 +42,11 @@ public class FuelConsumptionComparatorTest {
 
     @Test
     public void testCompareTwo() {
-        List<Plane> planes = new ArrayList<>();
+        List<FlyingMashines> planes = new ArrayList<>();
         planes.add(boing737500);
         planes.add(boing737300);
         planes.add(airbus_A320neo);
-        List<Plane> expected = new ArrayList<>();
+        List<FlyingMashines> expected = new ArrayList<>();
         FuelConsumptionComparator fcc=new FuelConsumptionComparator();
         expected.add(boing737300);
         expected.add(airbus_A320neo);
