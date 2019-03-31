@@ -26,7 +26,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException, PersistException {
 
-        String pathToFlyingMachines = "C:\\Program Files\\Java\\Aircompany\\src\\main\\resources\\FlyingMachines.txt";
+        String pathToFlyingMachines = "C:\\Program Files\\Java\\Aircompany\\resources\\FlyingMachines.txt";
         Fleet fleet = new Fleet();
         View view = new ConsoleView();
         try {
