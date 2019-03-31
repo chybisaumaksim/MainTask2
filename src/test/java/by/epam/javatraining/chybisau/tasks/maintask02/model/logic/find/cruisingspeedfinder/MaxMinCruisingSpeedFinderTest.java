@@ -1,5 +1,6 @@
 package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.find.cruisingspeedfinder;
 
+import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
@@ -25,24 +26,24 @@ public class MaxMinCruisingSpeedFinderTest {
     CargoPlane an225 = new CargoPlane("An225", 15_400, 800, 15_900, 250_000);
 
     @Test
-    public void testGetMaxCruisingSpeedPlane() {
-        List<Plane> planes = new ArrayList<>();
-        planes.add(boing737500);
-        planes.add(boing737300);
-        planes.add(airbus_A320neo);
-        planes.add(an124);
-        planes.add(an225);
-        assertEquals(boing737300, new MaxMinCruisingSpeedFinder().getMaxCruisingSpeedPlane(planes));
+    public void testGetMaxCruisingSpeedFlyingMashine() {
+        List<FlyingMashines> flyingMashines = new ArrayList<>();
+        flyingMashines.add(boing737500);
+        flyingMashines.add(boing737300);
+        flyingMashines.add(airbus_A320neo);
+        flyingMashines.add(an124);
+        flyingMashines.add(an225);
+        assertEquals(boing737300, new MaxMinCruisingSpeedFinder().getMaxCruisingSpeedFlyingMashine(flyingMashines));
     }
 
     @Test
-    public void testGetMinCruisingSpeedPlane() {
-        List<Plane> planes = new ArrayList<>();
-        planes.add(boing737500);
-        planes.add(boing737300);
-        planes.add(airbus_A320neo);
-        planes.add(an124);
-        planes.add(an225);
-        assertEquals(an225, new MaxMinCruisingSpeedFinder().getMinCruisingSpeedPlane(planes));
+    public void testMinCruisingSpeedFlyingMashine() {
+        List<FlyingMashines> flyingMashines = new ArrayList<>();
+        flyingMashines.add(boing737500);
+        flyingMashines.add(boing737300);
+        flyingMashines.add(airbus_A320neo);
+        flyingMashines.add(an124);
+        flyingMashines.add(an225);
+        assertEquals(an225, new MaxMinCruisingSpeedFinder().getMinCruisingSpeedFlyingMashine(flyingMashines));
     }
 }

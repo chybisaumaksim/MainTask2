@@ -35,6 +35,7 @@ class Initializer {
     PassangerPlane initializeFlyingMachine(PassangerPlane passangerPlane, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
+            logger.debug("Initializing passanger plane");
             while (st.hasMoreTokens()) {
                 st.nextToken();
                 passangerPlane.setName(st.nextToken());
@@ -52,6 +53,7 @@ class Initializer {
     CargoPlane initializeFlyingMachine(CargoPlane cargoPlane, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
+            logger.debug("Initializing cargo plane");
             while (st.hasMoreTokens()) {
                 st.nextToken();
                 cargoPlane.setName(st.nextToken());
@@ -69,6 +71,7 @@ class Initializer {
     Helicopter initializeFlyingMachine(Helicopter helicopter, String datesOfFlyingMachine) throws PersistException {
         StringTokenizer st = new StringTokenizer(datesOfFlyingMachine, ",");
         try {
+            logger.debug("Initializing helicopter");
             while (st.hasMoreTokens()) {
                 st.nextToken();
                 helicopter.setName(st.nextToken());

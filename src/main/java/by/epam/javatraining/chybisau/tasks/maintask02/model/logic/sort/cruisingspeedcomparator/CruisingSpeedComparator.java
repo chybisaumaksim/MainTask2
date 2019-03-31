@@ -2,6 +2,7 @@ package by.epam.javatraining.chybisau.tasks.maintask02.model.logic.sort.cruising
 
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.FlyingMashines;
 
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 

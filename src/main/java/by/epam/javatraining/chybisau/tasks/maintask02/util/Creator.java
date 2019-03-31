@@ -4,6 +4,7 @@ import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.helicopte
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.Plane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.cargoplane.CargoPlane;
 import by.epam.javatraining.chybisau.tasks.maintask02.model.data.fleet.planes.passangerplane.PassangerPlane;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 
@@ -13,31 +14,40 @@ import java.io.IOException;
  * @version 0.0.1
  */
 public class Creator {
+    private static final Logger logger;
     private static Creator instance;
 
-    private Creator()  {
+    static {
+        logger = Logger.getLogger(Creator.class);
     }
 
-    static Creator getInstance()  {
+    private Creator() {
+    }
+
+    static Creator getInstance() {
         if (instance == null) {
             instance = new Creator();
         }
         return instance;
     }
 
-    PassangerPlane createPassengerPlane()  {
+    PassangerPlane createPassengerPlane() {
+        logger.debug("Creating passanger plane");
         return new PassangerPlane();
     }
 
     CargoPlane createCargoPlane() throws IOException, PersistException {
+        logger.debug("Creating cargo plane");
         return new CargoPlane();
     }
 
     Helicopter createHelicopter() {
+        logger.debug("Creating helicopter");
         return new Helicopter();
     }
 
-    public Plane createPlane() {
+    Plane createPlane() {
+        logger.debug("Creating plane");
         return new Plane();
     }
 }

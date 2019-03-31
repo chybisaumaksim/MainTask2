@@ -19,6 +19,7 @@ public class DataReceiver {
     }
 
     public static List<String> getData(String path) throws PersistException {
+        logger.debug("Getting dates from file");
         BufferedReader is = null;
         String i;
         List<String> stringData = new ArrayList<>();
